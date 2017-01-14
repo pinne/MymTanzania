@@ -20,7 +20,7 @@ class App extends Component {
           <a className='btn btn--primary'>Lär dig mer om MYM</a>
         </section>
         <section>
-          <h2>Projekt: Ukerew</h2>
+          <h2>Projekt: Ukerewe</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae augue non massa condimentum ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse semper mi vel odio tristique, ut eleifend orci ultrices. Aliquam varius pellentesque ipsum sollicitudin hendrerit.</p>
           <a className='btn btn--primary'>Läs mer om projektet</a>
         </section>
