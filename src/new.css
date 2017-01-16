@@ -1,8 +1,17 @@
 body {
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
-  padding: 1rem;
+  font-family: 'Open sans', sans-serif;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+h1,h2,h3 {
+  font-family: 'Francois One', sans-serif;
+  font-weight: normal;
+  color: #4a4a4a;
+}
+p {
+  color: #4a4a4a;
 }
 
 .logo {
