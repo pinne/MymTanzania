@@ -4,265 +4,50 @@ body {
   padding: 1rem;
   box-sizing: border-box;
 }
-.flex-rad {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
-.top-space {
-  margin-top: 1rem;
-}
-.right-space {
-  margin-right: 1rem;
-}
-.left-space {
-  margin-left: 1rem;
-}
-.bottom-space {
-  margin-bottom: 1rem;
-}
-.main-menu__toggle-btn {
-  cursor: pointer;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  width: 20px;
-  height: 0px;
-}
-.main-menu__container nav.active {
-  display: block;
-}
-.main-menu__container nav {
-  display: none;
-}
-.main-menu__list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-.main-menu__link {
-  display: block;
-  padding: 1rem;
-  text-decoration: none;
-}
-.btn {
-  display: block;
-  cursor: pointer;
-  padding: 1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.btn--primary {
-  color: #fff;
-  background-color: #6abda8;
-}
-.btn--secondary {
-  color: #fff;
-  background-color: #ffbf00;
-}
+
 .logo {
   height: 4rem;
 }
-body {
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
-  padding: 1rem;
-  box-sizing: border-box;
-}
-.flex-rad {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
-.top-space {
-  margin-top: 1rem;
-}
-.right-space {
-  margin-right: 1rem;
-}
-.left-space {
-  margin-left: 1rem;
-}
-.bottom-space {
-  margin-bottom: 1rem;
-}
-.main-menu__toggle-btn {
-  cursor: pointer;
+
+.top {
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  width: 20px;
-  height: 0px;
-}
-.main-menu__container nav.active {
-  display: block;
-}
-.main-menu__container nav {
-  display: none;
-}
-.main-menu__list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-.main-menu__link {
-  display: block;
-  padding: 1rem;
-  text-decoration: none;
-}
-.btn {
-  display: block;
-  cursor: pointer;
-  padding: 1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.btn--primary {
-  color: #fff;
-  background-color: #6abda8;
-}
-.btn--secondary {
-  color: #fff;
-  background-color: #ffbf00;
-}
-.logo {
+  width: 100%;
   height: 4rem;
+  text-align: left;
 }
-.flex-rad {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
-.top-space {
-  margin-top: 1rem;
-}
-.right-space {
-  margin-right: 1rem;
-}
-.left-space {
-  margin-left: 1rem;
-}
-.bottom-space {
-  margin-bottom: 1rem;
-}
-.main-menu__toggle-btn {
-  cursor: pointer;
+
+.top__logo {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  width: 20px;
-  height: 0px;
+  bottom: 1rem;
+  left: 1rem;
 }
-.main-menu__container nav.active {
-  display: block;
+
+.image-block {
+  background-image: url('./images/CIMG1464.png');
+  background-size: cover;
+  height: 10rem;
+  padding: 5rem;
 }
-.main-menu__container nav {
-  display: none;
-}
-.main-menu__list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-.main-menu__link {
-  display: block;
-  padding: 1rem;
-  text-decoration: none;
-}
-.btn {
-  display: block;
-  cursor: pointer;
-  padding: 1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.btn--primary {
-  color: #fff;
-  background-color: #6abda8;
-}
-.btn--secondary {
-  color: #fff;
-  background-color: #ffbf00;
-}
-.logo {
-  height: 4rem;
-}
-.block__image {
+
+.image-block__image {
   width: 100%;
   max-height: 40rem;
 }
-body {
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
-  padding: 1rem;
-  box-sizing: border-box;
+
+.image-block__titel {
+  color: #fff;
 }
+
+.image-block__text {
+  color: #fff;
+}
+
+.block {
+  background-color: #f7f7f7;
+  padding: 1rem;
+}
+
 .flex-rad {
   display: flex;
   flex-wrap: wrap;
@@ -290,6 +75,10 @@ body {
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
+
+.space {
+  margin: 1rem;
+}
 .top-space {
   margin-top: 1rem;
 }
@@ -302,6 +91,23 @@ body {
 .bottom-space {
   margin-bottom: 1rem;
 }
+
+.inner-space {
+  padding: 1rem;
+}
+.top-inner-space {
+  padding-top: 1rem;
+}
+.right-inner-space {
+  padding-top: 1rem;
+}
+.left-inner-space {
+  padding-top: 1rem;
+}
+.bottom-inner-space {
+  padding-top: 1rem;
+}
+
 .main-menu__toggle-btn {
   cursor: pointer;
   position: absolute;
@@ -326,12 +132,15 @@ body {
   padding: 1rem;
   text-decoration: none;
 }
+
 .btn {
-  display: block;
+  display: inline-block;
   cursor: pointer;
   padding: 1rem;
+  border-radius: 0.2rem;
   text-decoration: none;
   text-transform: uppercase;
+  border:0;
 }
 .btn--primary {
   color: #fff;
@@ -340,170 +149,4 @@ body {
 .btn--secondary {
   color: #fff;
   background-color: #ffbf00;
-}
-.logo {
-  height: 4rem;
-}
-body {
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
-  padding: 1rem;
-  box-sizing: border-box;
-}
-.flex-rad {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
-.top-space {
-  margin-top: 1rem;
-}
-.right-space {
-  margin-right: 1rem;
-}
-.left-space {
-  margin-left: 1rem;
-}
-.bottom-space {
-  margin-bottom: 1rem;
-}
-.main-menu__toggle-btn {
-  cursor: pointer;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  width: 20px;
-  height: 0px;
-}
-.main-menu__container nav.active {
-  display: block;
-}
-.main-menu__container nav {
-  display: none;
-}
-.main-menu__list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-.main-menu__link {
-  display: block;
-  padding: 1rem;
-  text-decoration: none;
-}
-.btn {
-  display: block;
-  cursor: pointer;
-  padding: 1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.btn--primary {
-  color: #fff;
-  background-color: #6abda8;
-}
-.btn--secondary {
-  color: #fff;
-  background-color: #ffbf00;
-}
-.logo {
-  height: 4rem;
-}
-.block__image {
-  width: 100%;
-  max-height: 40rem;
-}
-.flex-rad {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
-.logo {
-  height: 4rem;
-}
-.top-space {
-  margin-top: 1rem;
-}
-.right-space {
-  margin-right: 1rem;
-}
-.left-space {
-  margin-left: 1rem;
-}
-.bottom-space {
-  margin-bottom: 1rem;
-}
-.main-menu__toggle-btn {
-  cursor: pointer;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  width: 20px;
-  height: 0px;
-}
-.main-menu__container nav.active {
-  display: block;
-}
-.main-menu__container nav {
-  display: none;
-}
-.main-menu__list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-.main-menu__link {
-  display: block;
-  padding: 1rem;
-  text-decoration: none;
-}
-body {
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
-  padding: 1rem;
-  box-sizing: border-box;
 }
