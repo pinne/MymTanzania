@@ -1,0 +1,9 @@
+compile:
+  post:
+    - npm run build
+
+deployment:
+  staging:
+    branch: master
+    commands:
+      - aws s3 sync build s3://mymtanzania/ --region eu-central-1 --delete
