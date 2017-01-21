@@ -1,21 +1,43 @@
 body {
   font-family: 'Open sans', sans-serif;
-  margin: 0;
+  background-color: #f7f7f7;
   padding: 0;
-  box-sizing: border-box;
 }
 
 h1,h2,h3 {
   font-family: 'Francois One', sans-serif;
   font-weight: normal;
   color: #4a4a4a;
+  margin: 0;
 }
 p {
   color: #4a4a4a;
 }
-
+ul {
+  list-style-type: none;
+  margin: 0;
+}
 .logo {
   height: 4rem;
+}
+
+.block {
+  background-color: #fcf1ef;
+  margin: 0 auto;
+  max-width: 1366px;
+  text-align: left;
+  padding: 2rem;
+}
+
+.block--primary {
+  background-color: #f7f7f7;
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (min-width: 1000px) and (max-width: 1600px){
+    .block {
+      padding: 4rem 15rem;
+    }
 }
 
 .top {
@@ -32,11 +54,16 @@ p {
   left: 1rem;
 }
 
+.intro__block{
+  padding: 1rem;
+}
+
 .image-block {
-  background-image: url('./images/CIMG1464.png');
+  background-image: url('./images/Sten_Mini-Oven_500px.png');
   background-size: cover;
-  height: 10rem;
+  background-position: center;
   padding: 5rem;
+  min-height: 10rem;
 }
 
 .image-block__image {
@@ -50,11 +77,6 @@ p {
 
 .image-block__text {
   color: #fff;
-}
-
-.block {
-  background-color: #f7f7f7;
-  padding: 1rem;
 }
 
 .flex-rad {
@@ -158,4 +180,26 @@ p {
 .btn--secondary {
   color: #fff;
   background-color: #ffbf00;
+}
+.footer {
+
+}
+.contact {
+  background-color: #3d4348;
+  padding: 4rem;
+}
+.contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+}
+.contact-list__item {
+  color: #c8c8c8;
+  font-size: 0.9rem;
+  margin-right: 1rem;
+}
+.contact-list__link {
+  color: #c8c8c8;
 }
