@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import kids from './images/CIMG1464.png';
 import Top from './Top.js';
 
 class Header extends Component {
