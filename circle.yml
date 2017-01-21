@@ -6,4 +6,4 @@ deployment:
   staging:
     branch: master
     commands:
-      - aws s3 sync build s3://mymtanzania/ --region eu-central-1 --delete
+      - aws s3 sync build s3://www.mymtanzania.se/ --region eu-central-1 --delete
