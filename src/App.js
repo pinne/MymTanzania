@@ -11,8 +11,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Project />
-        {/*<section className='block'>
+        <section className='block'>
           <h2>Även små bidrag är stora. Hur kan du hjälpa?</h2>
           <button className='btn btn--primary bottom-space right-space'>Swisha en gåva</button>
           <button className='btn btn--secondary'>Bli månadsgivare</button>
@@ -24,7 +23,7 @@ class App extends Component {
         <section className='block'>
           <h2>MYM bilder</h2>
           <p>Instagram</p>
-        </section>*/}
+        </section>
         <Footer />
       </div>
     );
