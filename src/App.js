@@ -4,7 +4,6 @@ import './App.css';
 import './new.css';
 import Header from './Header.js';
 import Footer from './Footer.js';
-import Project from './Project.js';
 
 class App extends Component {
   render() {
