@@ -11,6 +11,16 @@ class App extends Component {
       <div className="App">
         <Header />
         <section className='block'>
+          <div className='flex-row flex-align-center'>
+              <div className='oval right-space'>
+                <p className='oval__text'>
+                  MYM STÅR FÖR HOPP OM LIV
+                </p>
+              </div>
+              <div className='align-left '>Vårat mål är att skapa, bygga upp och driva olika utvecklingsprojekt som främjar och stärker fattiga och utsatta barn och ungdomars utveckling, utbildning, hälsa, relationer och självständighet. På så vis hoppas vi bidra till ge dem en möjlighet till en hållbar, trygg och hälsosam framtid som de själva kan påverka.</div>
+          </div>
+        </section>
+        <section className='block'>
           <h2>Även små bidrag är stora. Hur kan du hjälpa?</h2>
           <button className='btn btn--primary bottom-space right-space'>Swisha en gåva</button>
           <button className='btn btn--secondary'>Bli månadsgivare</button>

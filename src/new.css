@@ -12,6 +12,7 @@ h1,h2,h3 {
 }
 p {
   color: #4a4a4a;
+  font-size: 1rem;
 }
 ul {
   list-style-type: none;
@@ -25,19 +26,11 @@ ul {
   background-color: #fcf1ef;
   margin: 0 auto;
   max-width: 1366px;
-  text-align: left;
   padding: 2rem;
 }
 
 .block--primary {
   background-color: #f7f7f7;
-}
-
-/* ----------- Non-Retina Screens ----------- */
-@media screen and (min-width: 1000px) and (max-width: 1600px){
-    .block {
-      padding: 4rem 15rem;
-    }
 }
 
 .top {
@@ -60,10 +53,8 @@ ul {
 
 .image-block {
   background-image: url('./images/Sten_Mini-Oven_500px.png');
-  background-size: cover;
-  background-position: center;
   padding: 5rem;
-  min-height: 10rem;
+  min-height: 15rem;
 }
 
 .image-block__image {
@@ -79,11 +70,20 @@ ul {
   color: #fff;
 }
 
-.flex-rad {
+.flex-row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
 }
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -108,16 +108,16 @@ ul {
 }
 
 .space {
-  margin: 1rem;
+  margin: 2rem;
 }
 .top-space {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .right-space {
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 .left-space {
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 .bottom-space {
   margin-bottom: 1rem;
@@ -139,6 +139,9 @@ ul {
   padding-top: 1rem;
 }
 
+.align-left {
+  text-align: left;
+}
 .main-menu__toggle-btn {
   cursor: pointer;
   position: absolute;
@@ -202,4 +205,30 @@ ul {
 }
 .contact-list__link {
   color: #c8c8c8;
+}
+
+.oval{
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #e16f50;
+  min-width: 8rem;
+  min-height: 8rem;
+  padding: 1rem;
+  border-radius: 5rem;
+}
+.oval__text{
+  font-family: 'Francois One', sans-serif;
+  color: #fff;
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (min-width: 1000px) and (max-width: 1600px){
+    .block {
+      padding: 4rem 15rem;
+    }
+    .image-block {
+      background-size: cover;
+      min-height: 20rem;
+    }
 }
