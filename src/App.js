@@ -4,6 +4,7 @@ import './App.css';
 import './new.css';
 import Header from './Header.js';
 import Block1 from './Block1.js';
+import Block2 from './Block2.js';
 import Footer from './Footer.js';
 
 
@@ -13,11 +14,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Block1 />
-        <section className='block block--seconday'>
-          <h2 className='bottom-space'>Även små bidrag är stora. Hur kan du hjälpa?</h2>
-          <button className='btn btn--primary bottom-space right-space'>Swisha en gåva</button>
-          <button className='btn btn--secondary'>Bli månadsgivare</button>
-        </section>
+        <Block2/>
         <section className='block'>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae augue non massa condimentum ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse semper mi vel odio tristique, ut eleifend orci ultrices. Aliquam varius pellentesque ipsum sollicitudin hendrerit.</p>
           <button className='btn btn--primary'>Lär dig mer om MYM</button>

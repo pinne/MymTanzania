@@ -78,12 +78,10 @@ ul {
   max-height: 40rem;
 }
 
-.image-block__titel {
-  color: #fff;
-}
-
+.image-block__titel,
 .image-block__text {
   color: #fff;
+  text-shadow: 1px 1px 3px #4e4e4e;
 }
 
 .flex-row {
