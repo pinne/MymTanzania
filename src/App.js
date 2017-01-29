@@ -3,25 +3,18 @@ import React, { Component } from 'react';
 import './App.css';
 import './new.css';
 import Header from './Header.js';
+import Block1 from './Block1.js';
 import Footer from './Footer.js';
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Header />
-        <section className='block'>
-          <div className='flex-row flex-align-center'>
-              <div className='oval right-space'>
-                <p className='oval__text'>
-                  MYM STÅR FÖR HOPP OM LIV
-                </p>
-              </div>
-              <div className='align-left '>Vårat mål är att skapa, bygga upp och driva olika utvecklingsprojekt som främjar och stärker fattiga och utsatta barn och ungdomars utveckling, utbildning, hälsa, relationer och självständighet. På så vis hoppas vi bidra till ge dem en möjlighet till en hållbar, trygg och hälsosam framtid som de själva kan påverka.</div>
-          </div>
-        </section>
-        <section className='block'>
-          <h2>Även små bidrag är stora. Hur kan du hjälpa?</h2>
+        <Block1 />
+        <section className='block block--seconday'>
+          <h2 className='bottom-space'>Även små bidrag är stora. Hur kan du hjälpa?</h2>
           <button className='btn btn--primary bottom-space right-space'>Swisha en gåva</button>
           <button className='btn btn--secondary'>Bli månadsgivare</button>
         </section>

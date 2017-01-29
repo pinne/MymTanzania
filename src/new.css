@@ -2,12 +2,12 @@ body {
   font-family: 'Open sans', sans-serif;
   background-color: #f7f7f7;
   padding: 0;
+  box-sizing: border-box;
 }
 
 h1,h2,h3 {
   font-family: 'Francois One', sans-serif;
   font-weight: normal;
-  color: #4a4a4a;
   margin: 0;
 }
 p {
@@ -29,8 +29,23 @@ ul {
   padding: 2rem;
 }
 
+.block1 {
+  position: relative;
+}
+
+.block1__content {
+  background: #fff;
+  padding: 2rem;
+
+}
+
 .block--primary {
   background-color: #f7f7f7;
+}
+
+.block--seconday {
+  background-color: #6b4040;
+  color: #fff;
 }
 
 .top {
@@ -46,13 +61,14 @@ ul {
   bottom: 1rem;
   left: 1rem;
 }
-
 .intro__block{
   padding: 1rem;
 }
 
 .image-block {
   background-image: url('./images/Sten_Mini-Oven_500px.png');
+  background-size: cover;
+  background-position: top right;
   padding: 5rem;
   min-height: 15rem;
 }
@@ -72,7 +88,7 @@ ul {
 
 .flex-row {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: row;
 }
 
@@ -168,6 +184,7 @@ ul {
 }
 
 .btn {
+  font-family: 'Francois One', sans-serif;
   display: inline-block;
   cursor: pointer;
   padding: 1rem;
@@ -181,8 +198,8 @@ ul {
   background-color: #6abda8;
 }
 .btn--secondary {
-  color: #fff;
-  background-color: #ffbf00;
+  color: #6abda8;
+  background-color: #fff;
 }
 .footer {
 
@@ -212,23 +229,60 @@ ul {
   display: flex;
   align-items: center;
   background-color: #e16f50;
+  max-width: 8rem;
+  max-height: 8rem;
   min-width: 8rem;
   min-height: 8rem;
   padding: 1rem;
   border-radius: 5rem;
+  margin: 1rem auto 2rem auto;
 }
 .oval__text{
   font-family: 'Francois One', sans-serif;
   color: #fff;
 }
+.oval::after {
+    content: ' ';
+    background: #e16f50;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: 0;
+    bottom: 1.5rem;
+    transform: rotate(15deg);
+}
 
 /* ----------- Non-Retina Screens ----------- */
-@media screen and (min-width: 1000px) and (max-width: 1600px){
+@media screen and (min-width: 1000px) and (max-width: 1600px) {
+    .flex-row {
+      flex-wrap: nowrap;
+    }
+
     .block {
       padding: 4rem 15rem;
     }
+
+    .block1 {
+      padding: 8rem 15rem;
+    }
+
+    .block1__content{
+      position: absolute;
+      top: -5rem;
+      right: 4rem;
+      left: 4rem;
+      padding: 2rem 6rem;
+    }
+
     .image-block {
       background-size: cover;
-      min-height: 20rem;
+      background-position: center;
+      background-attachment: fixed;
+      min-height: 15rem;
+      padding: 7rem 25rem 10rem
+    }
+
+    .oval {
+      margin-right: 2rem;
     }
 }
