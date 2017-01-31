@@ -1,23 +1,49 @@
+html {
+  font-size: 62.5%;
+}
 body {
-  font-family: 'Open sans', sans-serif;
+  font-family: 'Didact Gothic', sans-serif;;
   background-color: #f7f7f7;
   padding: 0;
   box-sizing: border-box;
 }
 
-h1,h2,h3 {
+h1, h2, h3 {
   font-family: 'Francois One', sans-serif;
   font-weight: normal;
   margin: 0;
 }
+
+h1 {
+  font-size: 5.4rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+
 p {
   color: #4a4a4a;
-  font-size: 1rem;
+  font-size: 1.8rem;
 }
+
 ul {
   list-style-type: none;
   margin: 0;
 }
+
+a {
+  font-family: 'Francois One', sans-serif;
+  font-size: 1.5rem;
+  color:#3d9f90;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover, a:focus, a:active {
+  color:#e16f50;
+}
+
 .logo {
   height: 4rem;
 }
@@ -38,7 +64,17 @@ ul {
   padding: 2rem;
 
 }
-
+.block2 {
+  background-image: url('http://lorempixel.com/1440/300/nature/');
+}
+.block2__titel {
+  color:#fff;
+}
+.block2__titel--small {
+  font-family: 'Francois One', sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
 .block--primary {
   background-color: #f7f7f7;
 }
@@ -52,7 +88,7 @@ ul {
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
   width: 100%;
-  height: 4rem;
+  height: 5rem;
   text-align: left;
 }
 
@@ -183,9 +219,10 @@ ul {
 
 .btn {
   font-family: 'Francois One', sans-serif;
+  font-size: 1.5rem;
   display: inline-block;
   cursor: pointer;
-  padding: 1rem;
+  padding: 1.5rem 3rem;
   border-radius: 0.2rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -222,32 +259,35 @@ ul {
   color: #c8c8c8;
 }
 
-.oval{
+.oval {
   position: relative;
   display: flex;
   align-items: center;
   background-color: #e16f50;
-  max-width: 8rem;
-  max-height: 8rem;
-  min-width: 8rem;
-  min-height: 8rem;
-  padding: 1rem;
-  border-radius: 5rem;
+  max-width: 12rem;
+  max-height: 12rem;
+  min-width: 12rem;
+  min-height: 12rem;
+  padding: 2rem;
+  border-radius: 8rem;
   margin: 1rem auto 2rem auto;
 }
 .oval__text{
   font-family: 'Francois One', sans-serif;
+  font-size: 2.2rem;
   color: #fff;
 }
 .oval::after {
-    content: ' ';
-    background: #e16f50;
-    width: 2rem;
-    height: 2rem;
-    position: absolute;
-    left: 0;
-    bottom: 1.5rem;
-    transform: rotate(15deg);
+  content: ' ';
+  background: #e16f50;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 5px;
+  bottom: 1.8rem;
+  -webkit-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  transform: rotate(9deg);
 }
 
 /* ----------- Non-Retina Screens ----------- */
@@ -261,7 +301,7 @@ ul {
     }
 
     .block1 {
-      padding: 8rem 15rem;
+      padding: 12rem 15rem;
     }
 
     .block1__content{
@@ -276,8 +316,8 @@ ul {
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
-      min-height: 15rem;
-      padding: 7rem 25rem 10rem
+      min-height: 30rem;
+      padding: 10rem 40rem 20rem;
     }
 
     .oval {
