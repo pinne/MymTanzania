@@ -51,7 +51,6 @@ a:hover, a:focus, a:active {
 .block {
   background-color: #fcf1ef;
   margin: 0 auto;
-  max-width: 1366px;
   padding: 2rem;
 }
 
@@ -62,10 +61,15 @@ a:hover, a:focus, a:active {
 .block1__content {
   background: #fff;
   padding: 2rem;
-
+}
+.block1__text{
+  margin-left: 5rem;
+  margin-right: 6rem;
 }
 .block2 {
-  background-image: url('http://lorempixel.com/1440/300/nature/');
+  background-image: url('./images/jord_cropped_filter.jpg');
+  background-size: cover;
+  background-position: center;
 }
 .block2__titel {
   color:#fff;
@@ -74,6 +78,19 @@ a:hover, a:focus, a:active {
   font-family: 'Francois One', sans-serif;
   font-size: 1.6rem;
   margin-bottom: 0;
+}
+.block3 {
+  background-color: #fff;
+}
+
+.block3__image {
+  background-color: red;
+  max-width: 12rem;
+  max-height: 12rem;
+  min-width: 12rem;
+  min-height: 12rem;
+  padding: 2rem;
+  border-radius: 8rem;
 }
 .block--primary {
   background-color: #f7f7f7;
@@ -102,11 +119,8 @@ a:hover, a:focus, a:active {
 }
 
 .image-block {
-  background-image: url('./images/Sten_Mini-Oven_500px.png');
-  background-size: cover;
-  background-position: top right;
+  background-image: url('./images/sten_cropped_filter.jpg');
   padding: 5rem;
-  min-height: 15rem;
 }
 
 .image-block__image {
@@ -133,7 +147,9 @@ a:hover, a:focus, a:active {
 .flex-align-center {
     align-items: center;
 }
-
+.flex-align-self-center {
+  align-self: center;
+}
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -291,19 +307,22 @@ a:hover, a:focus, a:active {
 }
 
 /* ----------- Non-Retina Screens ----------- */
-@media screen and (min-width: 1000px) and (max-width: 1600px) {
+@media screen and (min-width: 768px) {
     .flex-row {
       flex-wrap: nowrap;
     }
 
     .block {
-      padding: 4rem 15rem;
+      padding: 10% 20%;
     }
 
     .block1 {
-      padding: 12rem 15rem;
+      padding: 10% 30%;
     }
-
+    .block2 {
+      padding-top: 12rem;
+      padding-bottom: 6rem;
+    }
     .block1__content{
       position: absolute;
       top: -5rem;
@@ -316,8 +335,7 @@ a:hover, a:focus, a:active {
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
-      min-height: 30rem;
-      padding: 10rem 40rem 20rem;
+      padding: 10% 30% 20%;
     }
 
     .oval {
