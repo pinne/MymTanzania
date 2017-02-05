@@ -21,9 +21,11 @@ h1 {
 h2 {
   font-size: 4.2rem;
 }
-
+h3 {
+  font-size: 2rem;
+}
 p {
-  color: #4a4a4a;
+  color: #4c4744;
   font-size: 1.8rem;
 }
 
@@ -49,7 +51,7 @@ a:hover, a:focus, a:active {
 }
 
 .block {
-  background-color: #fcf1ef;
+  background-color: #f8f8f8;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -80,17 +82,49 @@ a:hover, a:focus, a:active {
   margin-bottom: 0;
 }
 .block3 {
+  background-color: #f8f8f8;
+  justify-content: center;
+}
+.block3__content{
   background-color: #fff;
+  margin: 10rem;
+  padding: 10rem 20rem;
+}
+.block3__titel-text{
+  margin-bottom: 0;
 }
 
 .block3__image {
-  background-color: red;
+  background-color: #f2c0b3;
   max-width: 12rem;
   max-height: 12rem;
   min-width: 12rem;
   min-height: 12rem;
   padding: 2rem;
   border-radius: 8rem;
+}
+
+.block4__color-box {
+  background-color:#fff;
+  border-radius: 1rem;
+  padding: 4rem;
+  margin: 1rem 0;
+}
+.block4__color-box-titel{
+  color: #4c4744;
+}
+.block4__color-box--light {
+ background-color: #fcf1ef;
+}
+.block4__color-box--medium {
+ background-color: #f2c0b3;
+}
+.block4__color-box--dark {
+ background-color: #e16f50;
+}
+.block4__color-box--dark h3,
+.block4__color-box--dark p {
+   color:#fff;
 }
 .block--primary {
   background-color: #f7f7f7;
@@ -120,7 +154,10 @@ a:hover, a:focus, a:active {
 
 .image-block {
   background-image: url('./images/sten_cropped_filter.jpg');
-  padding: 5rem;
+  background-size: cover;
+  background-position: center;
+  min-height: 30rem;
+  padding: 10rem 2rem;
 }
 
 .image-block__image {
@@ -131,7 +168,6 @@ a:hover, a:focus, a:active {
 .image-block__titel,
 .image-block__text {
   color: #fff;
-  text-shadow: 1px 1px 3px #4e4e4e;
 }
 
 .flex-row {
@@ -149,6 +185,9 @@ a:hover, a:focus, a:active {
 }
 .flex-align-self-center {
   align-self: center;
+}
+.flex-center {
+  justify-content: center;
 }
 .material-icons {
   font-family: 'Material Icons';
@@ -252,23 +291,27 @@ a:hover, a:focus, a:active {
   color: #6abda8;
   background-color: #fff;
 }
-.footer {
-
-}
 .contact {
-  background-color: #3d4348;
-  padding: 4rem;
+  background-color: #363230;
+}
+.contact-social {
+  background-color: #4c4744;
+  color: #f3eae6;
+}
+.contact-social__titel{
+  font-family: 'Francois One', sans-serif;
+  color: #f3eae6;
 }
 .contact-list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  padding: 0;
+  padding: 2rem;
 }
 .contact-list__item {
   color: #c8c8c8;
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   margin-right: 1rem;
 }
 .contact-list__link {
@@ -305,9 +348,26 @@ a:hover, a:focus, a:active {
   -ms-transform: rotate(15deg);
   transform: rotate(9deg);
 }
-
 /* ----------- Non-Retina Screens ----------- */
-@media screen and (min-width: 768px) {
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen
+  and (min-width: 480px)
+  and (max-width: 768px) {
+
+}
+
+@media screen
+  and (min-width: 1024px) {
+
     .flex-row {
       flex-wrap: nowrap;
     }
@@ -317,7 +377,7 @@ a:hover, a:focus, a:active {
     }
 
     .block1 {
-      padding: 10% 30%;
+      padding: 12rem;
     }
     .block2 {
       padding-top: 12rem;
@@ -325,12 +385,14 @@ a:hover, a:focus, a:active {
     }
     .block1__content{
       position: absolute;
-      top: -5rem;
-      right: 4rem;
-      left: 4rem;
-      padding: 2rem 6rem;
+      top: -10rem;
+      right: 10rem;
+      left: 10rem;
+      padding: 5rem 10rem;
     }
-
+    .block4__color-box{
+      margin:0 1rem;
+    }
     .image-block {
       background-size: cover;
       background-position: center;
