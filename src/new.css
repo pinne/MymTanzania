@@ -85,10 +85,12 @@ a:hover, a:focus, a:active {
   background-color: #f8f8f8;
   justify-content: center;
 }
+
 .block3__content{
   background-color: #fff;
-  margin: 10rem;
-  padding: 10rem 20rem;
+  /* margin: 2rem; */
+  padding: 2rem;
+  text-align: left;
 }
 .block3__titel-text{
   margin-bottom: 0;
@@ -389,6 +391,11 @@ a:hover, a:focus, a:active {
       right: 10rem;
       left: 10rem;
       padding: 5rem 10rem;
+    }
+    .block3__content{
+      background-color: #fff;
+      margin: 10rem;
+      padding: 10rem 20rem;
     }
     .block4__color-box{
       margin:0 1rem;
