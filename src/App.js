@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import './App.css';
-import './new.css';
+import './style.css';
 import Header from './Header.js';
 import Block1 from './Block1.js';
 import Block2 from './Block2.js';
