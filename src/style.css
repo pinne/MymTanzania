@@ -75,18 +75,38 @@ a:hover, a:focus, a:active {
   margin-left: 5rem;
   margin-right: 6rem;
 }
-.block2 {
+.block2--bg {
   background-image: url('./images/jord_cropped_filter.jpg');
   background-size: cover;
   background-position: center;
 }
-.block2__titel {
+.block2__text {
   color:#fff;
 }
 .block2__titel--small {
   font-family: 'Francois One', sans-serif;
   font-size: 1.6rem;
   margin-bottom: 0;
+}
+.block2__content {
+  position: relative;
+  background-color: #3d9f90;
+  color: #fff;
+}
+.block2__content::before{
+  content: ' ';
+  position: absolute;
+  top: -1.4rem;
+  width: 3rem;
+  height: 3rem;
+  background: #3d9f90;
+  transform: rotate(45deg);
+}
+.block2__content--first {
+
+}
+.block2__content-second {
+
 }
 .block3 {
   background-color: #f8f8f8;
