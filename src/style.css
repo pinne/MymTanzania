@@ -97,17 +97,23 @@ a:hover, a:focus, a:active {
   content: ' ';
   position: absolute;
   top: -1.4rem;
+  right: 50%;
   width: 3rem;
   height: 3rem;
   background: #3d9f90;
   transform: rotate(45deg);
 }
-.block2__content--first {
-
+.block2__icon{
+  position: absolute;
+  top:1rem;
+  right:1rem;
+  color:#fff;
 }
-.block2__content-second {
-
+.block2__btn{
+  width: 20rem;
+  margin: 1rem;
 }
+
 .block3 {
   background-color: #f8f8f8;
   justify-content: center;
@@ -418,6 +424,10 @@ a:hover, a:focus, a:active {
     .block2 {
       padding-top: 12rem;
       padding-bottom: 6rem;
+    }
+    .block2__icon{
+      top:4rem;
+      right:4rem;
     }
     .block1__content{
       position: absolute;
