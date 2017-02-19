@@ -31,8 +31,8 @@ class Block3 extends Component {
             </div>
             <div className='block3__text-container'>
               <p className='block3__titel-text'>HÄR FOKUSERAR VI EXTRA JUST NU</p>
-              <h2>Projekt: Ukerewe</h2>
-              <p>I byn Hamuyebe på ön Ukerewe i Tanzania växer många idag upp med begränsad möjligheter till utbildning och tillgång till hälsovård. MYM planerar här bygga upp och driva ett utvecklingscenter som vi hoppas kan bidra till en bättre och hållbar framtid för många av barnen som lever här.</p>
+              <h2 className='block3__titel'>Projekt: Ukerewe</h2>
+              <p className='block3__text align-center'>I byn Hamuyebe på ön Ukerewe i Tanzania växer många idag upp med begränsad möjligheter till utbildning och tillgång till hälsovård. MYM planerar här bygga upp och driva ett utvecklingscenter som vi hoppas kan bidra till en bättre och hållbar framtid för många av barnen som lever här.</p>
             </div>
           </div>
           <div className={textToggleClass}>
