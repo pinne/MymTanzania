@@ -30,8 +30,8 @@ class Block2 extends Component {
     const monthlyInfo = this.state.togglePaymentMonth ? 'active' : 'inactive';
 
     return (
-      <section className=''>
-        <div className='block block2--bg'>
+      <section>
+        <div className='block block2 block2--bg'>
           <p className='block2__text block2__titel--small'>ÄVEN SMÅ BIDARG ÄR STORA</p>
           <h2 className='block2__text bottom-space'>Hur kan du hjälpa?</h2>
           <button onClick={(e) => this.togglePaymentInfo('swish')} className='block2__btn btn btn--primary block2__buttin'>Swisha en gåva</button>
