@@ -568,11 +568,14 @@ a:hover, a:focus, a:active {
     .block4__color-box{
       margin:0 1rem;
     }
+    .image-block__container{
+      max-width: 144rem;
+      height: 100vh;
+      margin: 0 auto;
+    }
 
     .image-block {
-      max-width: 144rem;
-      height: 60rem;
-      margin: 0 auto;
+      height: 100%;
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
