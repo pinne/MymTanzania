@@ -17,7 +17,7 @@ class Block2 extends Component {
     showInfo === 'swish' ?   this.setState({togglePaymentSwish: true, togglePaymentMonth: false}) : this.setState({togglePaymentSwish: false, togglePaymentMonth: true}) ;
   }
 
-  closePaymentInfo() {
+  closePaymentInfo(event) {
     event.preventDefault();
     this.setState({
       togglePaymentSwish: false,
