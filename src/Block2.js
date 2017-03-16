@@ -26,15 +26,15 @@ class Block2 extends Component {
   }
 
   render() {
-    const swishInfo = this.state.togglePaymentSwish ? 'active' : 'inactive';
-    const monthlyInfo = this.state.togglePaymentMonth ? 'active' : 'inactive';
+    const swishInfo = this.state.togglePaymentSwish ? 'block2-active' : 'block2-inactive';
+    const monthlyInfo = this.state.togglePaymentMonth ? 'block2-active' : 'block2-inactive';
 
     return (
       <section>
         <div className='block block2 block2--bg'>
           <p className='block2__text block2__titel--small'>ÄVEN SMÅ BIDARG ÄR STORA</p>
           <h2 className='block2__titel bottom-space'>Hur kan du hjälpa?</h2>
-          <button onClick={(e) => this.togglePaymentInfo('swish')} className='block2__btn btn btn--primary block2__buttin'>Swisha en gåva</button>
+          <button onClick={(e) => this.togglePaymentInfo('swish')} className='block2__btn btn btn--primary block2__button'>Swisha en gåva</button>
           <button onClick={(e) => this.togglePaymentInfo('monthly')} className='block2__btn btn btn--secondary'>Bli månadsgivare</button>
         </div>
         <div className={swishInfo}>

@@ -125,6 +125,17 @@ a:hover, a:focus, a:active {
   border-left: 1rem solid #3d9f90;
   border-bottom: 0.8rem solid transparent;
 }
+.block2-active {
+  display: block;
+  margin-top: -2rem;
+}
+.block2-inactive {
+  display: none;
+}
+.block2 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 
 .block2--bg {
   background-image: url('./images/jord_cropped_filter.jpg');
@@ -139,6 +150,9 @@ a:hover, a:focus, a:active {
   font-size: 1.4rem;
   color: #fff;
 }
+.block2__content {
+  padding: 3rem;
+}
 .block2__content-titel{
   font-size: 2.6rem;
 }
@@ -150,27 +164,30 @@ a:hover, a:focus, a:active {
   font-family: 'Francois One', sans-serif;
   font-size: 1.4rem;
   margin-bottom: 0;
+  margin-top:0;
 }
 .block2__content {
   position: relative;
   background-color: #afd5cf;
   color: #fff;
 }
-.block2__content::before{
+.block2__content::after {
   content: ' ';
   position: absolute;
-  top: -1.4rem;
+  top: -3rem;
   right: 50%;
-  width: 3rem;
-  height: 3rem;
-  background: #afd5cf;
-  transform: rotate(45deg);
+  width: 0;
+  height: 0;
+  border-left: 4rem solid transparent;
+  border-right: 4rem solid transparent;
+  border-bottom: 4rem solid #afd5cf;
+  transform: translate(50%, 0);
 }
 .block2__icon{
   position: absolute;
   top:1rem;
   right:1rem;
-  color:#fff;
+  color:#51463f;
 }
 .block2__btn{
   width: 20rem;
@@ -184,7 +201,6 @@ a:hover, a:focus, a:active {
 
 .block3__content{
   background-color: #fff;
-  /* margin: 2rem; */
   padding: 2rem;
 }
 .block3__text-container {
@@ -569,17 +585,14 @@ a:hover, a:focus, a:active {
       margin:0 1rem;
     }
     .image-block__container{
-      max-width: 144rem;
-      height: 100vh;
-      margin: 0 auto;
-    }
 
+    }
     .image-block {
       height: 100%;
-      background-attachment: fixed;
-      background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
+      max-width: 168rem;
+      height: 60rem;
+      margin: 0 auto;
     }
 
     .image-block__text{
