@@ -133,14 +133,14 @@ a:hover, a:focus, a:active {
   display: none;
 }
 .block2 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding: 0;
 }
 
 .block2--bg {
   background-image: url('./images/jord_cropped_filter.jpg');
   background-size: cover;
   background-position: center;
+  padding: 4rem 2rem;
 }
 .block2__titel{
   font-size: 2.6rem;
@@ -222,19 +222,18 @@ a:hover, a:focus, a:active {
   color: #51463f;
 }
 .block3__image {
-  background-color: #f2c0b3;
+  background-image: url('./images/ukerewe_cropped2.png');
+  background-size: cover;
   max-width: 20rem;
   max-height: 20rem;
   min-width: 20rem;
   min-height: 20rem;
   padding: 2rem;
-  border-radius: 12rem;
 }
 .block3__text{
   text-align: left;
   color: #51463f
 }
-
 .block3__ingress{
   text-align: left;
 }
@@ -433,10 +432,10 @@ a:hover, a:focus, a:active {
 }
 .btn--primary {
   color: #fff;
-  background-color: #6abda8;
+  background-color: #3d9f90;
 }
 .btn--secondary {
-  color: #6abda8;
+  color: #3d9f90;
   background-color: #fff;
 }
 .contact {
@@ -524,7 +523,7 @@ a:hover, a:focus, a:active {
 
     .block1 {
       max-width: 104rem;
-      margin: 0 auto;
+      margin: 0 auto 10rem;
       background-color: #f8f8f8;
     }
 
@@ -545,16 +544,27 @@ a:hover, a:focus, a:active {
     }
 
     .block2 {
-      padding-top: 12rem;
-      padding-bottom: 6rem;
+      max-width: 168rem;
+      margin: 0 auto 10rem;
+    }
+    .block2__titel{
+      font-size: 4.2rem;
+    }
+    .block2__titel--small{
+      font-size: 1.6rem;
     }
     .block2__icon{
       top:4rem;
       right:4rem;
     }
+    .block2--bg {
+      padding-top: 12rem;
+      padding-bottom: 6rem;
+    }
+
     .block3 {
       max-width: 124rem;
-      margin: 0 auto;
+      margin: 0 auto 10rem;
       background-color: #f8f8f8;
     }
     .block3__content{
@@ -570,7 +580,6 @@ a:hover, a:focus, a:active {
       line-height: 2.6rem;
       margin-top: 0rem;
     }
-
     .block3__text{
       font-size: 1.6rem;
       line-height: 2.2rem;
@@ -578,12 +587,25 @@ a:hover, a:focus, a:active {
     .block3__image-container{
       order:2;
     }
+    .block3__image {
+      max-width: 30rem;
+      max-height: 30rem;
+      min-width: 30rem;
+      min-height: 30rem;
+    }
     .block3__text-container {
       order:1;
     }
+
+    .block4 {
+      max-width: 104rem;
+      margin: 0 auto 10rem;
+    }
+
     .block4__color-box{
       margin:0 1rem;
     }
+
     .image-block__container{
 
     }
@@ -594,10 +616,10 @@ a:hover, a:focus, a:active {
       height: 60rem;
       margin: 0 auto;
     }
-
     .image-block__text{
       font-size: 2.2rem;
     }
+
     .oval {
       margin-right: 5rem;
     }
