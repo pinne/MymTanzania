@@ -202,7 +202,7 @@ a:hover, a:focus, a:active {
 
 .block3__content{
   background-color: #f8f8f8;
-  padding: 2rem;
+  padding: 2rem 2rem 0;
 }
 .block3__text-container {
   text-align: left;
