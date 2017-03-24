@@ -19,7 +19,7 @@ class Block1 extends Component {
 
   render() {
     const showMymInfo = this.state.toggled ? 'active' : 'inactive';
-    const showIcon = this.state.toggled ? 'icon-down' : 'icon-up';
+    const showIcon = this.state.toggled ? 'down' : 'up';
     let cssClasses = `${showIcon} block1__link`;
 
     return (

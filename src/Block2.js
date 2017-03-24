@@ -32,10 +32,10 @@ class Block2 extends Component {
     return (
       <section className='block block2'>
         <div className='block2--bg'>
-          <p className='block2__text block2__titel--small'>ÄVEN SMÅ BIDARG ÄR STORA</p>
-          <h2 className='block2__titel bottom-space'>Hur kan du hjälpa?</h2>
-          <button onClick={(e) => this.togglePaymentInfo('swish')} className='block2__btn btn btn--primary block2__button'>Swisha en gåva</button>
-          <button onClick={(e) => this.togglePaymentInfo('monthly')} className='block2__btn btn btn--secondary'>Bli månadsgivare</button>
+          <p className='block2__text block2__titel--small'>SMÅ GÄRNINGAR MED STOR KÄRLEK</p>
+          <h2 className='block2__titel bottom-space'>Vill du hjälpa till?</h2>
+          <button onClick={(e) => this.togglePaymentInfo('swish')} className='block2__btn btn btn--primary block2__button'>Ge en gåva</button>
+          <button onClick={(e) => this.togglePaymentInfo('monthly')} className='block2__btn btn btn--secondary'>Bli medlem</button>
         </div>
         <div className={swishInfo}>
           <div className='block block2__content block2__content--first top-space'>
