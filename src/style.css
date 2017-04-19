@@ -88,7 +88,7 @@ a:hover, a:focus, a:active {
 .block {
   background-color: #f8f8f8;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 3rem 2rem 3rem 2rem;
 }
 
 .block1 {
@@ -141,7 +141,7 @@ a:hover, a:focus, a:active {
   background-image: url('./images/jord_cropped_filter.jpg');
   background-size: cover;
   background-position: center;
-  padding: 4rem 2rem;
+  padding: 6rem 2rem;
 }
 .block2__titel{
   font-size: 2.6rem;
@@ -192,7 +192,7 @@ a:hover, a:focus, a:active {
 }
 .block2__btn{
   width: 20rem;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 .block3 {
@@ -202,7 +202,7 @@ a:hover, a:focus, a:active {
 
 .block3__content{
   background-color: #f8f8f8;
-  padding: 2rem 2rem 0;
+  padding: 3rem 2rem 0;
 }
 .block3__text-container {
   text-align: left;
@@ -216,6 +216,7 @@ a:hover, a:focus, a:active {
   font-size: 1.4rem;
   color: #7e7671;
   margin-bottom: 0;
+  margin-top: 0;
 }
 .block3__titel {
   font-size: 2.6rem;
@@ -229,8 +230,10 @@ a:hover, a:focus, a:active {
   min-width: 20rem;
   min-height: 20rem;
   padding: 2rem;
+  margin: 0 0 2rem 0;
 }
 .block3__text{
+  font-size: 1.4rem;
   text-align: left;
   color: #51463f;
   margin:0;
@@ -239,13 +242,20 @@ a:hover, a:focus, a:active {
   text-align: left;
 }
 
+.block1__ingress-text{
+  margin-top: 0;
+}
+
 .block4__color-box {
   background-color:#fff;
   border-radius: 1rem;
   padding: 2rem;
   margin: 1rem 0;
+  text-align: left;
+  min-height: 20rem;
 }
 .block4__color-box-titel{
+  font-size: 1.5rem;
   color: #4c4744;
 }
 .block4__color-box--light {
@@ -284,7 +294,7 @@ a:hover, a:focus, a:active {
 }
 .image-block__content{
   position: absolute;
-  top: 30%;
+  top: 33%;
   left: 1rem;
   right: 1rem;
   transform: translate(0%, -50%);
@@ -492,18 +502,18 @@ a:hover, a:focus, a:active {
   display: flex;
   align-items: center;
   background-color: #e16f50;
-  max-width: 20rem;
-  max-height: 20rem;
-  min-width: 20rem;
-  min-height: 20rem;
-  padding: 2rem;
+  max-width: 12rem;
+  max-height: 12rem;
+  min-width: 12rem;
+  min-height: 12rem;
   border-radius: 12rem;
-  margin: 1rem auto 2rem auto;
+  padding: 2rem;
+  margin: 0 auto 2rem auto;
   box-sizing: border-box;
 }
 .oval__text{
   font-family: 'Francois One', sans-serif;
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   color: #fff;
 }
 .oval::after {
@@ -511,13 +521,11 @@ a:hover, a:focus, a:active {
     position: absolute;
     left: 0;
     bottom: 0;
-    -webkit-transform: rotate(15deg);
-    -ms-transform: rotate(15deg);
-    transform: rotate(70deg);
+    transform: rotate(65deg);
     width: 0;
     height: 0;
-    border-top: 5rem solid #e16f50;
-    border-left: 5rem solid transparent;
+    border-top: 3rem solid #e16f50;
+    border-left: 3rem solid transparent;
 }
 /* ----------- Non-Retina Screens ----------- */
 @media only screen and (max-width: 480px) {
@@ -650,5 +658,45 @@ a:hover, a:focus, a:active {
 
     .oval {
       margin-right: 5rem;
+    }
+
+    .oval {
+      position: relative;
+      display: flex;
+      align-items: center;
+      background-color: #e16f50;
+      max-width: 20rem;
+      max-height: 20rem;
+      min-width: 20rem;
+      min-height: 20rem;
+      padding: 2rem;
+      border-radius: 12rem;
+      margin: 0 2rem 0 0;
+      box-sizing: border-box;
+    }
+    .oval__text{
+      font-family: 'Francois One', sans-serif;
+      font-size: 2.2rem;
+      color: #fff;
+    }
+    .oval::after {
+      content: ' ';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        -webkit-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+        transform: rotate(70deg);
+        width: 0;
+        height: 0;
+        border-top: 5rem solid #e16f50;
+        border-left: 5rem solid transparent;
+    }
+    .block4__color-box{
+      padding: 3rem;
+    }
+    .block4__color-box-titel{
+      font-size: 2rem;
+      color: #4c4744;
     }
 }
