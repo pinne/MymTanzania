@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Block4.css';
 
 class Block4 extends Component {
   render() {

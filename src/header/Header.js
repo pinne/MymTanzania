@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Top from './Top.js';
+import './Header.css';
+import Top from './top/Top.js';
 
 class Header extends Component {
   render() {

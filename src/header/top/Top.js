@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import logo from './images/logo-mobil.svg';
+import logo from '../../images/logo-mobil.svg';
+import './Top.css';
 
 class Top extends Component {
   render() {

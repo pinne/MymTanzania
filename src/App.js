@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 
 import './App.css';
-import './style.css';
-import Header from './Header.js';
-import Block1 from './Block1.js';
+import Header from './header/Header.js';
+import Block1 from './block1/Block1.js';
 import Block2 from './block2/Block2.js';
-import Block3 from './Block3.js';
-import Block4 from './Block4.js';
-import Footer from './Footer.js';
+import Block3 from './block3/Block3.js';
+import Block4 from './block4/Block4.js';
+import Footer from './footer/Footer.js';
 
 
 class App extends Component {

@@ -1,0 +1,47 @@
+.image-block__container {
+    position: relative;
+}
+
+.image-block__content {
+    text-align: center;
+    position: absolute;
+    top: 33%;
+    left: 1rem;
+    right: 1rem;
+    transform: translate(0%, -50%);
+}
+
+.image-block {
+    background-image: url('../images/sten_cropped_filter.jpg');
+    background-size: cover;
+    min-height: 40rem;
+    background-position: center;
+}
+
+.image-block__titel,
+.image-block__text {
+    font-family: 'Francois One', sans-serif;
+    color: #fff;
+    text-shadow: 0 0 7px rgba(76, 71, 68, 0.3);
+}
+
+.image-block__text {
+    font-size: 1.8rem;
+}
+
+@media screen and (min-width: 768px) {
+    .image-block {
+        height: 100%;
+        background-repeat: no-repeat;
+        max-width: 168rem;
+        height: 60rem;
+        margin: 0 auto;
+    }
+    .image-block__text {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width: 1440px) {}

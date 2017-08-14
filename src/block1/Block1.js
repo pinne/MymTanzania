@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Block1.css';
 
 class Block1 extends Component {
   constructor(props) {

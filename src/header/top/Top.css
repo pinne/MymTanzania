@@ -1,0 +1,17 @@
+.top {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+    .top {
+        text-align: left;
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width: 1440px) {}
