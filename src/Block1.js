@@ -34,7 +34,6 @@ class Block1 extends Component {
             <div>
               <div className='block1__ingress'>
                 <p className='block1__ingress-text'>Vårat mål är att skapa, bygga upp och driva olika utvecklingsprojekt som främjar och stärker fattiga och utsatta barn och ungdomars utveckling, utbildning, hälsa, relationer och självständighet. På så vis hoppas vi bidra till ge dem en möjlighet till en hållbar, trygg och hälsosam framtid som de själva kan påverka.</p>
-                <a className={cssClasses} onClick={(e) => {this.toggleMymInfo()}}>{ !this.state.toggled ? 'LÄS MER' : 'DÖLJ INFO' }</a>
               </div>
               <div className={showMymInfo}>
                 <p className='block1__text block1__text--small'>
@@ -56,6 +55,7 @@ class Block1 extends Component {
                   För att uppnå detta har MYM byggt upp en lokalorganisation i Tanzania som skapar en nära relation och dialog med människor som lever i de områden där vi bedriver våra projekt. Vår utgångspunkt är att tillsammans arbeta fram lösningar utifrån lokala förutsättningar i den omkringliggande miljön vad gäller såväl natur som kultur. Denna närkontakt gör det möjligt för MYM att upptäcka potential samt arbeta efter lokala behov och önskemål och således bidra till en mer hållbar förändring och utveckling med de projekt vi bedriver.
                 </p>
               </div>
+              <a className={cssClasses} onClick={(e) => {this.toggleMymInfo()}}>{ this.state.toggled ? 'DÖLJ INFO' : 'LÄS MER' }</a>
           </div>
         </div>
       </div>
