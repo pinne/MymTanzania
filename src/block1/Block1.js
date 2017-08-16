@@ -56,7 +56,7 @@ class Block1 extends Component {
                   För att uppnå detta har MYM byggt upp en lokalorganisation i Tanzania som skapar en nära relation och dialog med människor som lever i de områden där vi bedriver våra projekt. Vår utgångspunkt är att tillsammans arbeta fram lösningar utifrån lokala förutsättningar i den omkringliggande miljön vad gäller såväl natur som kultur. Denna närkontakt gör det möjligt för MYM att upptäcka potential samt arbeta efter lokala behov och önskemål och således bidra till en mer hållbar förändring och utveckling med de projekt vi bedriver.
                 </p>
               </div>
-              <a className={cssClasses} onClick={(e) => {this.toggleMymInfo()}}>{ this.state.toggled ? 'DÖLJ INFO' : 'LÄS MER' }</a>
+              <a className={cssClasses} onClick={(e) => {this.toggleMymInfo()}}>{ this.state.toggled ? 'VISA MINDRE' : 'VISA MER INFO' }</a>
           </div>
         </div>
       </div>

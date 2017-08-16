@@ -33,8 +33,8 @@ class Block2 extends Component {
     return (
       <section className='block block2'>
         <div className='block2--bg'>
-          <p className='block2__text block2__titel--small'>SMÅ GÄRNINGAR MED STOR KÄRLEK</p>
-          <h2 className='block2__titel bottom-space'>Vill du hjälpa till?</h2>
+          <p className='block2__text block2__titel--small'>ÄVEN SMÅ BIDRAG ÄR STORA</p>
+          <h2 className='block2__titel bottom-space'>Hur kan du bidra?</h2>
           <button onClick={(e) => this.togglePaymentInfo('swish')} className='block2__btn btn btn--primary block2__button'>Ge en gåva</button>
           <button onClick={(e) => this.togglePaymentInfo('monthly')} className='block2__btn btn btn--secondary'>Bli medlem</button>
         </div>
@@ -42,7 +42,7 @@ class Block2 extends Component {
           <div className='block block2__content block2__content--first top-space'>
             <p className='block2__content-text'>Swisha en gåva</p>
             <h3 className='block2__content-titel'>070X-XXX-XXX</h3>
-            <p className='block2__content-text'>TACK!</p>
+            <p className='block2__content-text'>Tack för din hjälp!</p>
             <a onClick={(e) => {this.closePaymentInfo(e)}} className=' block2__icon'><i className='material-icons'>close</i></a>
           </div>
         </div>
@@ -50,7 +50,7 @@ class Block2 extends Component {
           <div className='block block2__content block2__content--second top-space'>
             <p className='block2__content-text'>Vi är hemskt tacksamma för alla gåvor, stora som små. Vill du ge ett bidrag? Sätt in ett valfritt belopp på bankgiro:</p>
             <h3 className='block2__content-titel'>814-6862</h3>
-            <p className='block2__content-text'>TACK!</p>
+            <p className='block2__content-text'>Tack för din hjälp!</p>
             <a onClick={(e) => {this.closePaymentInfo(e)}} className=' block2__icon'><i className='material-icons'>close</i></a>
           </div>
         </div>
