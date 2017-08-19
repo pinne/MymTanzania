@@ -29,7 +29,7 @@ class Block3 extends Component {
       <section className='block block3'>
         <div className='block3__content'>
           <div className='block3__teaser flex-row flex-wrap'>
-            <div className='block3__image-container flex-align-self-center'>
+            <div className='block3__image-container'>
               <figure className='block3__image'></figure>
             </div>
             <div>
