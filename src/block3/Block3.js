@@ -24,7 +24,7 @@ class Block3 extends Component {
   }
   
   scroll(element) {
-    ReactDOM.findDOMNode(element).scrollIntoView(false);
+    ReactDOM.findDOMNode(element).scrollIntoView(true);
   }
 
   render() {
