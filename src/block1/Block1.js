@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import './Block1.css';
 
 class Block1 extends Component {
@@ -16,6 +17,12 @@ class Block1 extends Component {
     this.setState({
       toggled: !this.state.toggled
     });
+
+    this.state.toggled ? (this.scrollToElement(this.refs.block1Content)) : (this.scrollToElement(this.refs.block1Header));
+  }
+  
+  scrollToElement(element) {
+    ReactDOM.findDOMNode(element).scrollIntoView(true);
   }
 
   render() {
@@ -24,8 +31,8 @@ class Block1 extends Component {
     let cssClasses = `${showIcon} block1__link`;
 
     return (
-      <section className='block block1'>
-        <div className='block1__content'>
+      <section ref='block1Header' className='block block1'>
+        <div ref='block1Content' className='block1__content'>
           <div className='flex-row'>
             <div className='oval'>
               <div className='oval__text'>
