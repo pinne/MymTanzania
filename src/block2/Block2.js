@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Block2.css';
+import Membership from './Membership.js'
 
 class Block2 extends Component {
   constructor(props) {
@@ -48,9 +49,7 @@ class Block2 extends Component {
         </div>
         <div className={monthlyInfo}>
           <div className='block block2__content block2__content--second top-space'>
-            <p className='block2__content-text'>Vi är hemskt tacksamma för alla gåvor, stora som små. Vill du ge ett bidrag? Sätt in ett valfritt belopp på bankgiro:</p>
-            <h3 className='block2__content-titel'>814-6862</h3>
-            <p className='block2__content-text'>Tack för din hjälp!</p>
+            <Membership />
             <a onClick={(e) => {this.closePaymentInfo(e)}} className=' block2__icon'><i className='material-icons'>close</i></a>
           </div>
         </div>
