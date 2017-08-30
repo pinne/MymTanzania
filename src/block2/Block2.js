@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Block2.css';
+import Membership from './Membership.js'
 
 class Block2 extends Component {
   constructor(props) {
@@ -48,12 +49,7 @@ class Block2 extends Component {
         </div>
         <div className={monthlyInfo}>
           <div className='block block2__content block2__content--second top-space'>
-            <p className='block2__content-text'>Vad roligt att du vill bli en del av MYM! <br /> Vi har gjort det enkelt för dig att bli medlem - en valfri inträdessumma, inga årliga avgifter!<br />Följ bara dessa två steg så är du en del av oss:</p>
-            <ul>
-              <li className='block2__content-titel'>1. Fyll i namn och e-postaddress.</li>
-              <li className='block2__content-titel'>2. För över valfri summa till <br /> bankgiro 814-6862.</li>
-            </ul>
-            <p className='block2__content-text'>TACK och välkommen!<br /> När MYM har tagit emot din betalning och registrerat ditt medlemskap får du en bekräftelse om medlemskapet till din angivna e-postadress.</p>
+            <Membership />
             <a onClick={(e) => {this.closePaymentInfo(e)}} className=' block2__icon'><i className='material-icons'>close</i></a>
           </div>
         </div>
