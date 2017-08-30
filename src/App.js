@@ -17,7 +17,7 @@ class App extends Component {
         <Block1 />
         <Block2 />
         <Block3 />
-        <Block4 />
+        {/*<Block4 />*/}
         <Footer />
       </div>
     );

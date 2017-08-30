@@ -12,7 +12,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: 'Francois One', sans-serif;
     font-weight: normal;
     margin: 0;
@@ -332,6 +333,13 @@ a:active {
 }
 
 .contact-list__icon-mail {
+    position: absolute;
+    top: -10%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+
+.contact-list__icon-insta {
     position: absolute;
     top: -10%;
     right: 50%;

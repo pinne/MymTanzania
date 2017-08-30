@@ -4,6 +4,13 @@
     text-align: center;
     padding: 1rem 0;
 }
+.top__logo--mobile {
+   width: 4rem;
+}
+
+.top__logo--rest{
+    display: none;
+}
 
 @media screen and (min-width: 768px) {
     .top {
@@ -11,8 +18,18 @@
         text-align: left;
         padding: 2rem;
     }
+    .top__logo--rest {
+        display: block;
+        width: 16rem;
+    }
+
+    .top__logo--mobile {
+        display: none;
+    }
 }
 
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+
+}
 
 @media screen and (min-width: 1440px) {}

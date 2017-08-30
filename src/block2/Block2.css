@@ -13,7 +13,7 @@
 }
 
 .block2--bg {
-    background-image: url('../images/jord_cropped_filter.jpg');
+    background-image: url('../images/block2.png');
     background-size: cover;
     background-position: center;
     padding: 6rem 2rem;
@@ -34,10 +34,12 @@
 }
 
 .block2__content-titel {
+    font-family: 'Francois One', sans-serif;
     font-size: 2.6rem;
 }
 
-.block2__content-text {
+.block2__content-text,
+.block2__content-list {
     font-size: 1.4rem;
     color: #51463f;
 }
@@ -100,7 +102,8 @@
         padding-top: 12rem;
         padding-bottom: 6rem;
     }
-    .block2__content-text {
+    .block2__content-text,
+    .block2__content-list {
         font-size: 1.5rem;
     }
 }
@@ -109,8 +112,11 @@
     .block2__titel,
     .block2__content-titel {
         font-size: 4.2rem;
+        padding: 0 20rem;
     }
-    .block2__content-text {
+    .block2__content-text,
+    .block2__content-list {
         font-size: 1.6rem;
+        padding: 0 20rem;
     }
 }

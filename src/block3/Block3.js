@@ -42,15 +42,55 @@ class Block3 extends Component {
             </div>
             <div>
               <div ref='block3Header' className='block3__text-container'>
-                <p className='block3__titel-text'>HÄR FOKUSERAR VI EXTRA JUST NU</p>
-                <h2 className='block3__titel'>Projekt: Ukerewe</h2>
-                <p className='block3__ingress'>I byn Hamuyebe på ön Ukerewe i Tanzania växer många idag upp med begränsad möjligheter till utbildning och tillgång till hälsovård. MYM planerar här bygga upp och driva ett utvecklingscenter som vi hoppas kan bidra till en bättre och hållbar framtid för många av barnen som lever här.</p>
+                <p className='block3__titel-text'>I FOKUS JUST NU</p>
+                <h2 className='block3__titel'>PROJEKT: Center för barnomsorg</h2>
+                <p className='block3__ingress'>I byn Hamuyebe, på ön Ukerewe i Victoriasjön, har utvecklingen gått sakta och lokalbefolkningen har identifierat ett stort behov av en hjälpfunktion för barn och föräldrar när det gäller utbildning, psykosocialt stöd och hälsovård. MYM har som mål att tillsammans med byn bygga upp och driva ett center för barnomsorg som vi hoppas kommer att bidra till en ljusare framtid för barnen och familjerna som lever här.</p>
               </div>
               <div className={textToggleClass}>
-                <p className='block3__text'>Det projekt som MYM fokuserar främst på just nu handlar om att bygga upp ett center för barnomsorg i byn Hamuyebe på ön Ukerewe i Tanzania. Byn ligger på landsbygden och saknar både el och rinnande vatten och har ingen riktig butik för mat, basvaror eller hälsoartiklar. Tanken är att invånarna i samhället kostnadsfritt ska kunna ta del av verksamheten.</p>
-                <p className='block3__text'>Under 2013 lyckades MYM genom vår lokala organisation MYM Tanzania köpa en bit mark på cirka 4000 kvadratmeter i Hamuyebe. Tomten ligger cirka 20 min cykelväg från den centrala byn Nansio. Den är vackert och strategiskt belägen vid Victoriasjön och bara ett par hundra meter från byns grundskola. Marken är tillräckligt stor för att bygga upp både ett eller ett par hus och lekplats, samt låta bruka en del av marken för lokala stapelvaror så som exempelvis majs, kassava och olika grönsaker.</p>
-                <p className='block3__text'>Målet är att centret ska främja barns både fysiska och psykosociala hälsa. Det ska inspirera till barns utveckling där barnen kan aktivera sig, få stöd, lära sig nya saker, och skapa något att vara stolta över. Exempel på aktiviteter är till exempel läsning och läxläsning, ritning & målning, olika lekar och sporter, musik och instrument, hygien och hälsovård, samt att lära sig praktiska sysslor som att odla, bygga, dreja och sy.</p>
-                <p className='block3__text'>Det projekt som MYM fokuserar främst på just nu handlar om att bygga upp ett center för barnomsorg i byn Hamuyebe på ön Ukerewe i Tanzania. Byn ligger på landsbygden och saknar både el och rinnande vatten och har ingen riktig butik för mat, basvaror eller hälsoartiklar. Tanken är att invånarna i samhället kostnadsfritt ska kunna ta del av verksamheten. Under 2013 lyckades MYM genom vår lokala organisation MYM Tanzania köpa en bit mark på cirka 4000 kvadratmeter i Hamuyebe. Tomten ligger cirka 20 min cykelväg från den centrala byn Nansio. Den är vackert och strategiskt belägen vid Victoriasjön och bara ett par hundra meter från byns grundskola. Marken är tillräckligt stor för att bygga upp både ett eller ett par hus och lekplats, samt låta bruka en del av marken för lokala stapelvaror så som exempelvis majs, kassava och olika grönsaker. Målet är att centret ska främja barns både fysiska och psykosociala hälsa. Det ska inspirera till barns utveckling där barnen kan aktivera sig, få stöd, lära sig nya saker, och skapa något att vara stolta över. Exempel på aktiviteter är till exempel läsning och läxläsning, ritning & målning, olika lekar och sporter, musik och instrument, hygien och hälsovård, samt att lära sig praktiska sysslor som att odla, bygga, dreja och sy. MYM har alltid värderat och varit mycket noga med att vår lokalorganisation ska vara den viktigaste aktören som driver MYMs arbete på plats. Lika viktigt är det att grunda våra idéer i samarbete med bybor så att dessa bygger på byns behov, kapacitet och potential. Vi anser att detta är avgörande för att projektet ska kunna implementeras väl, och för att vi ska kunna skapa förutsättningar för att göra stor, positiv och hållbar inverkan på barns liv och utveckling.</p>
+                <h4 className='block3__text block3__text--titel'>Bakgrund till projektet</h4>
+                <p className='block3__text'>
+                Under 2013 köpte vår lokala organisation, MYM Tanzania, en tomt i byn Hamuyebe på ön Ukerewe i Tanzania. Ön är något isolerad då den endast går att nå via båt från fastlandet och byn Hamuyebe saknar el och säkra vattenkällor, vilket innebär stora utmaningar med vattenburna sjukdomar. De har heller ingen riktig butik för mat, basvaror eller hälso- och sjukvårdsartiklar, vilket gör att byns befolkning än extra sårbar. Det finns en grundskola i byn men utöver detta finns det inga möjligheter till arrangerad barnomsorg för varken små eller större barn. Det finns därför stora behov av att skapa möjligheter för barn att få tillgång till omsorg, lek och stöd under dagarna eller efter skolans slut.                
+                </p>
+                <p className='block3__text'>
+                Tomten där vi planerar att bygga centret ligger cirka 20 minuters cykelväg från  öns centrala by Nansio. Den är vackert och strategiskt belägen vid Victoriasjön, bara ett par hundra meter från byns grundskola. Marken är en strandtomt på drygt 4000 kvadratmeter och är tillräckligt stor för ett par tre hus samt olika lekytor. Tanken är även att bruka en del av tomten för odling av lokala stapelvaror som exempelvis ris, majs, kassava, potatis, bönor och grönsaker.
+                </p>
+                <h4 className='block3__text block3__text--titel'>Lokalt driven utveckling</h4>
+                <p className='block3__text'>
+                MYM har alltid värderat och varit mycket noga med att vår lokalorganisation ska vara den viktigaste aktören som driver MYMs arbete på plats. Lika viktigt har det varit att grunda detta projekt i samarbete med bybor så att dessa bygger på byns behov, kapacitet och potential. Vi anser att detta är avgörande för att projektet ska kunna implementeras väl, och för att vi ska kunna skapa förutsättningar för att göra positiv och hållbar inverkan på barns liv och utveckling.                
+                </p>
+                <p className='block3__text'>
+                För att förankra MYMs projekt i Hamuyebe arrangerade våra lokala MYMare, Musiba och Castory, ett val våren 2016 ihop med byledningen och skolans rektor där fyra kommittéer skapades. Två kommittéer består av barn: en av barn mellan 5- och 10 år och en av barn mellan cirka 11- och 17 år, båda med handledning av vuxna. Det är viktigt att centret är anpassat för både mindre och större barn då dessa har olika behov, potential och önskemål. Kommittéerna kommer bli avgörande för att skapa ett projekt och center som barnen i byn kommer värdera och besöka. Vi har även skapat två föräldragrupper, en bestående av män och en med kvinnor. Dessa kommer att blir en stor och viktig del i att planera, implementera och driva centret. Även rektorn har visat stort intresse för projektet och vill gärna samarbeta och bli en del av centret.                  
+                </p>
+                <p className='block3__text'>
+                I samband med valet av kommittéer hade varje kommitté även en liten workshop där de diskuterade tankar, önskemål och förväntningar kring det planerade centret. Detta gav ett fantastiskt gensvar och det är utifrån deras diskussioner som vi har skapat det underlag som ligger till grund för vår planering av centret med tillhörande aktiviteter.
+                </p>
+                <h4 className='block3__text block3__text--titel'>Samarbete: Ingenjörer utan gränser</h4>
+                <p className='block3__text'>
+                  Under 2016 inledde vi i ett samarbete med Ingenjörer utan gränser (IUG) i Lund. IUG kommer att hjälpa oss med arkitekt- och konstruktionsritningar till utvecklingscentret. För att skapa dessa ritningar kommer en tävling att hållas för arkitekt- och ingenjörsstudenter på Lunds universitet. IUG har för denna tävling tillsatt en projektledare som heter Elin Schnipper, som ihop med IUG har letat sponsorer för tävlingen och som kommer att leda och koordinera genomförandet av tävlingen. De sponsrande företagen verkar inom arkitekt- och byggbranschen och de kommer förutom att sponsra tävlingen även bekosta det vinnande lagets resa ner till Hamuyebe för överlämning av projektritningarna. Företagen kommer även att agera som handledare för de tävlande studenterna vid utvalda tillfällen under tävlingens gång. De tävlande ska bilda lag med två arkitekt- och två ingenjörsstudenter. Tävlingen kommer att äga rum mellan september 2017 och februari 2018, och det vinnande laget kommer sedan att detaljplanera ritningarna och planera sin resa till Tanzania.
+                </p>
+                <h4 className='block3__text block3__text--titel'>Visionen</h4>
+                <p className='block3__text'>
+                Visionen med projektet är att skapa en trygg, hälsosam och stimulerande miljö där barn har möjlighet att utvecklas och påverka sina livsvillkor utifrån deras egna drömmar och mål
+                </p>
+                <h4 className='block3__text block3__text--titel'>Viktiga fokusområden</h4>
+                <p className='block3__text block3__text--italic'>
+                  Förbättra och stärka barns fysiska hälsa
+                </p>
+                <p className='block3__text'>
+                Centret ska fokusera på hälsofrämjande aktiviteter då det finns många hälsorisker i området där bland annat näringsbrist, vattenburna sjukdomar och malaria är stora problem.                  
+                </p>
+                <p className='block3__text block3__text--italic'>Förbättra och stärka barns psykosociala hälsa</p>                
+                <p className='block3__text'>
+                Centret ska vara en inbjudande och trygg plats där barn kan få hjälp att diskutera, bearbeta och hantera exempelvis svåra upplevelser, utmanande relationer och stormande känslor. Idag har barn i området få möjligheter till psykosocial stöd.
+                </p>
+                <p className='block3__text block3__text--italic'>Främja och stärka barns utveckling, utbildning och autonomi</p>                
+                <p className='block3__text'>
+                Centret ska vara en plats för kreativitet och stimulans, både i form av formell och informell utveckling. Detta behövs eftersom det tanzaniska samhället erbjuder få möjligheter till barnomsorg. Centret kommer att vara anpassat och funktionellt för barn i olika åldrar så att både mindre barn och större ungdomar känner sig inbjudna och kan besöka och identifiera sig med centret.
+                </p>
+                <p className='block3__text block3__text--italic'>Främja aktiviteter som ger möjlighet till autonomi och självförsörjning</p>                
+                <p className='block3__text'>
+                Centret strävar efter att bli självförsörjande och att kunna drivas självständigt av lokalbefolkningen. Aktiviteterna involverar allt från att generera säkert dricksvatten och sin odla egen mat, till att arrangera olika inkomstgenererande aktiviteter som kan betala centrets omkostnader.
+                </p>
               </div>
               <a className={cssClasses} onClick={(e) => { this.toggleProjectInfo() }}>{this.state.toggled ? 'VISA MINDRE' : 'MER OM PROJEKTET'}</a>
             </div>
