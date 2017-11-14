@@ -12,9 +12,6 @@ jobs:
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
-          name: aws cli
-          command: sudo apt-get -y -qq install awscli
-      - run:
           name: Install npm
           command: npm install
       - save_cache:
@@ -31,6 +28,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Install aws cli
+          command: sudo apt-get -y -qq install awscli
+      - run:
           name: Deploy site
           command: aws s3 sync build s3://www.mymtanzania.se/ --region eu-central-1 --delete
   deploy_develop:
@@ -38,6 +38,9 @@ jobs:
       - image: circleci/node:4.8.2
     steps:
       - checkout
+      - run:
+          name: Install aws cli
+          command: sudo apt-get -y -qq install awscli
       - run:
           name: Deploy development site
           command: aws s3 sync build s3://$DEVELOP_BUCKET/ --region eu-central-1 --delete
