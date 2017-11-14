@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: Install aws cli
-          command: sudo apt-get -y -qq install awscli
+          command: sudo pip install awscli
       - run:
           name: Install dependencies
           command: npm install
