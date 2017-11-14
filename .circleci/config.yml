@@ -12,6 +12,9 @@ jobs:
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
+          name: aws cli
+          command: sudo apt-get -y -qq install awscli
+      - run:
           name: Install npm
           command: npm install
       - save_cache:
