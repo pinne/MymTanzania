@@ -26,7 +26,6 @@ jobs:
           command: npm run build
 
   deploy_master:
-    working_directory: ~/MymTanzania
     docker:
       - image: circleci/node:4.8.2
     steps:
@@ -35,7 +34,6 @@ jobs:
           name: Deploy site
           command: aws s3 sync build s3://www.mymtanzania.se/ --region eu-central-1 --delete
   deploy_develop:
-    working_directory: ~/MymTanzania
     docker:
       - image: circleci/node:4.8.2
     steps:
