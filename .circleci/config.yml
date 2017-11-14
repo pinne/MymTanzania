@@ -7,9 +7,6 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Update npm
-          command: 'sudo npm install -g npm@5.5.1'
-      - run:
           name: Install aws cli
           command: sudo apt-get -y -qq install awscli
       - run:
