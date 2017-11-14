@@ -15,7 +15,7 @@ jobs:
           name: Install aws cli
           command: sudo apt-get -y -qq install awscli
       - run:
-          name: Install npm
+          name: Install dependencies
           command: npm install
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
