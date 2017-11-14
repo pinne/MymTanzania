@@ -16,18 +16,18 @@
 }
 
 .block1__text--small {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-align: left;
 }
 
 .block1__link {
     position: relative;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     padding: 0.5rem 2rem;
 }
 
 .block1__ingress-text {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-top: 0;
 }
 
@@ -48,7 +48,7 @@
         line-height: 2.6rem;
     }
     .block1__text--small {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         line-height: 2.2rem;
         margin-top: 1rem;
         text-align: left;
