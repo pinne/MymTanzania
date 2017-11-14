@@ -7,13 +7,13 @@ jobs:
     steps:
       - checkout
       - run:
-        name: Update npm
-        command: 'sudo npm install -g npm@latest'
+          name: Update npm
+          command: 'sudo npm install -g npm@latest'
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
-        name: Install npm
-        command: npm install
+          name: Install npm
+          command: npm install
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
