@@ -21,15 +21,20 @@ jobs:
       - build:
           name: npm build
           command: npm run build
-      - deploy_master:
-          name: Deploy site
-          command: aws s3 sync build s3://www.mymtanzania.se/ --region eu-central-1 --delete
-          filters:
-            branches:
-              only: master
-      - deploy_develop:
-          name: Deploy development site
-          command: aws s3 sync build s3://$DEVELOP_BUCKET/ --region eu-central-1 --delete
-          filters:
-            branches:
-              only: develop
+
+workflows:
+  version: 2
+  jobs:
+    - build
+    - deploy_master:
+        name: Deploy site
+        command: aws s3 sync build s3://www.mymtanzania.se/ --region eu-central-1 --delete
+        filters:
+          branches:
+            only: master
+    - deploy_develop:
+        name: Deploy development site
+        command: aws s3 sync build s3://$DEVELOP_BUCKET/ --region eu-central-1 --delete
+        filters:
+          branches:
+            only: develop
