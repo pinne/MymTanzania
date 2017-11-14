@@ -41,7 +41,7 @@ class Block2 extends Component {
         </div>
         <div className={swishInfo}>
           <div className='block block2__content block2__content--first top-space'>
-            <p className='block2__content-text'>Fantastiskt att du vill bidra till vårt värdefulla arbete! <br/>Du kan ge en valfri gåva till MYM på två sätt. Om du vill att bidraget ska gå till ett specifikt projekt uppge detta i meddelandefältet när du gör din betalning.</p>
+            <p className='block2__content-text'>Fantastiskt att du vill bidra till vårt värdefulla arbete! <br/>Om du vill att bidraget ska gå till ett specifikt projekt uppge detta i meddelandefältet när du gör din betalning.</p>
             <h3 className='block2__content-titel'>Bankgiro: 814-6862</h3>
             <p className='block2__content-text'>Tack för din hjälp!</p>
             <a onClick={(e) => {this.closePaymentInfo(e)}} className=' block2__icon'><i className='material-icons'>close</i></a>
