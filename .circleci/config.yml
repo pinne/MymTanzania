@@ -22,19 +22,35 @@ jobs:
           name: npm build
           command: npm run build
 
+  deploy_master:
+    docker:
+      - image: circleci/node:4.8.2
+    steps:
+      - checkout
+      - run:
+          name: Deploy site
+          command: aws s3 sync build s3://www.mymtanzania.se/ --region eu-central-1 --delete
+  deploy_develop:
+    docker:
+      - image: circleci/node:4.8.2
+    steps:
+      - checkout
+      - run:
+          name: Deploy development site
+          command: aws s3 sync build s3://$DEVELOP_BUCKET/ --region eu-central-1 --delete
+
 workflows:
   version: 2
-  jobs:
-    - build
-    - deploy_master:
-        name: Deploy site
-        command: aws s3 sync build s3://www.mymtanzania.se/ --region eu-central-1 --delete
-        filters:
-          branches:
-            only: master
-    - deploy_develop:
-        name: Deploy development site
-        command: aws s3 sync build s3://$DEVELOP_BUCKET/ --region eu-central-1 --delete
-        filters:
-          branches:
-            only: develop
+  build_and_deploy:
+    jobs:
+      - build
+      - deploy_master:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
+      - deploy_develop:
+          filters:
+            branches:
+              only: develop
