@@ -36,6 +36,25 @@
     color: #fff;
 }
 
+#instafeed {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.instafeedTarget__link {
+    margin-right: 2rem;
+}
+
+.instafeedTarget__image{
+    height: 100%;
+    width: 100%;
+}
+
+.instafeedTarget__caption {
+
+}
+
 @media screen and (min-width: 768px) {
     .block4 {
         max-width: 104rem;
