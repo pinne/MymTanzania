@@ -8,7 +8,6 @@ import Block3 from './block3/Block3.js';
 import Block4 from './block4/Block4.js';
 import Footer from './footer/Footer.js';
 
-
 class App extends Component {
   render() {
     return (
