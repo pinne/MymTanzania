@@ -38,21 +38,17 @@
 
 #instafeed {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
 }
 
 .instafeedTarget__link {
-    margin-right: 2rem;
+    margin-bottom: 2rem;
 }
 
 .instafeedTarget__image{
     height: 100%;
     width: 100%;
-}
-
-.instafeedTarget__caption {
-
 }
 
 @media screen and (min-width: 768px) {
@@ -67,6 +63,16 @@
     .block4__color-box-titel {
         font-size: 2rem;
         color: #4c4744;
+    }
+
+    #instafeed {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .instafeedTarget__link {
+        margin-right: 2rem;
     }
 }
 
