@@ -21,16 +21,16 @@ class Block4 extends Component {
                 </section>
                 <section className='block block4'>
                     <div className='block4__color-box block4__color-box--light'>
-                        <h3 className='block4__color-box-titel'>SEPTEMBER</h3> 
-                        <p>Den 12 september kickar vi igång tävlingen med Ingenjörer utan gränser för att rita vårt kommande center i byn Hamuyebe. Tävlingen är öppen för arkitekt - och ingenjörsstudenter på Lunds Universitet. Nu kör vi!</p>
+                        <h3 className='block4__color-box-titel'>DECEMBER</h3> 
+                        <p>Nu har du chansen att göra verklig skillnad för barn i Tanzania! Var med och sponsra uppbyggnaden av MYM:s center, ritat av arkitekt- och ingenjörsstudenter från Lund universitet. Ge en valfri gåva via hemsidans formulär ovan.</p>
                     </div> 
                     <div className='block4__color-box block4__color-box--medium'>
-                        <h3 className='block4__color-box-titel'>AUGUSTI</h3>
-                        <p>MYM har anlitat en lantmätare som har ritat en topografisk karta över vår tomt i byn Hamuyebe. Denna karta har kombinerats med kartan som Ingenjörer utan gränsers ritade när de besökte oss, och kommer ligga till grund för ritningarna av vårt kommande center.</p>
+                        <h3 className='block4__color-box-titel'>NOVEMBER</h3>
+                        <p>MYM har medverkat på tävlingens andra handledarmöte. Vi har fått se fantastiska idéer från de 6 lagen, samt ta del av expertis från våra fina handledar-sponsorer i Malmö: Fojab, Sydark konstruera, WSP, Tengbom, Tyréns och Structor.</p>
                     </div>
                     <div className='block4__color-box block4__color-box--dark'>
-                        <h3 className='block4__color-box-titel'>JULI</h3>
-                        <p>Ingenjörer utan gränser har besökt Ukerewe och tomten i Hamuyebe där vi ska bygga upp vårt center för barnomsorg. Jätteroligt tycker vi på MYM, och tack så mycket för att ni har filmat, tagit bilder samt hjälpt oss att rita en karta över tomten.</p>
+                        <h3 className='block4__color-box-titel'>OKTOBER</h3>
+                        <p>Tävlingen fick ett mycket positivt gensvar från studenter och handledare. Hela 6 lag tävlar nu om att rita upp MYM:s center och tomt i Hamuyebe. Det ska bli otroligt spännande att se deras kommande ritningar!</p>
                     </div>
                 </section>
             </div>
