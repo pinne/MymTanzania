@@ -28,6 +28,8 @@ const fetchEntry = async entry => {
 }
 fetchEntry('3ESKTo0plSs4UUEee8gCGy').then(res => console.log(res))
 
+ReactGA.initialize('UA-819513-7');
+
 ReactDOM.render(
   <App />,
   document.getElementById('root')
