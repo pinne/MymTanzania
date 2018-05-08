@@ -38,20 +38,120 @@
 
 #instafeed {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
+    overflow-x: scroll;
 }
 
 .instafeedTarget__link {
     margin-bottom: 2rem;
 }
 
-.instafeedTarget__image{
-    height: 100%;
-    width: 100%;
+.instafeedTarget__image {
+    height: 30rem;
+    width: 30rem;
+    margin-right: 1rem;
 }
 
+.block4 {
+    display: flex;
+    flex-direction: row;
+}
+
+.block4__color-box {
+    margin-left: 1rem;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.block4__color-box:first-child {
+    margin-left: 0;
+}
+
+.block4 {
+    max-width: 104rem;
+    margin: 0 auto 6rem;
+}
+
+.block4__color-box {
+    margin: 0 1rem;
+    padding: 3rem;
+}
+
+.block4__color-box-titel {
+    font-size: 2rem;
+    color: #4c4744;
+}
+
+.instafeedTarget__link {
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+
+.instafeedTarget__text {
+    color: #51463f;
+}
+
+.instafeedTarget__caption {
+    position: absolute;
+    bottom: 0;
+    background-color: hsla(360, 100%, 100%, 0.8);
+    padding: 1.6rem 1.2rem 2.4rem 1.2rem;
+    border-radius: 0.5rem;
+    height: 10.6rem;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.38;
+    text-transform: none;
+    left: 0.5rem;
+    right: 1.5rem;
+    bottom: 1rem;
+    overflow: hidden;
+}
+
+.instafeedTarget__image {
+    object-fit: cover;
+}
+
+.instafeedTarget__caption {}
+
 @media screen and (min-width: 768px) {
+    .block4 {
+        max-width: 104rem;
+        margin: 0 auto 6rem;
+    }
+    #instafeed {
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow-x: auto;
+    }
+    .instafeedTarget__link {
+        position: relative;
+        width: calc(100% / 3);
+        box-sizing: border-box;
+        margin-bottom: 2rem;
+    }
+    .instafeedTarget__link:nth-child(3n-6),
+    .instafeedTarget__link:nth-child(4n-8) {
+        padding-left: 2rem;
+    }
+    .instafeedTarget__image {
+        object-fit: cover;
+        height: 29.9rem;
+        width: 100%;
+        margin: 0;
+    }
+    .instafeedTarget__link:nth-child(3n-6)>.instafeedTarget__caption,
+    .instafeedTarget__link:nth-child(4n-8)>.instafeedTarget__caption {
+        left: 2.5rem;
+    }
+    .instafeedTarget__caption {
+        right: 0.5rem;
+    }
+}
+
+/* @media screen and (min-width: 768px) {
     .block4 {
         max-width: 104rem;
         margin: 0 auto 6rem;
@@ -127,4 +227,4 @@
     .block4__color-box:first-child{
         margin-left: 0;
     }
-}
+} */
