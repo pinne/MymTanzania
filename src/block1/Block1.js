@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import * as contentful from 'contentful';
 import './Block1.css';
 
 class Block1 extends Component {
@@ -7,10 +8,32 @@ class Block1 extends Component {
     super(props);
 
     this.state = {
-      toggled: false
+      toggled: false,
+      text: '',
     }
 
     this.toggleMymInfo = this.toggleMymInfo.bind(this);
+  }
+
+  state = {
+    posts: []
+  }
+
+  client = contentful.createClient({
+    space: 'r72rp0hpbzql',
+    accessToken: '268aeba4109f013e9a6e2e229c9b53417b56ce6300abc9592d73f683f914ce20'
+  })
+
+  componentDidMount() {
+    this.fetchPosts().then(this.setPosts);
+  }
+
+  fetchPosts = () => this.client.getEntries()
+
+  setPosts = response => {
+    this.setState({
+      posts: response.items
+    })
   }
 
   toggleMymInfo() {
@@ -20,7 +43,7 @@ class Block1 extends Component {
 
     this.state.toggled ? (this.scrollToElement(this.refs.block1Content)) : (this.scrollToElement(this.refs.block1Header));
   }
-  
+
   scrollToElement(element) {
     ReactDOM.findDOMNode(element).scrollIntoView(true);
   }
@@ -41,7 +64,13 @@ class Block1 extends Component {
             </div>
             <div>
               <div className='block1__ingress'>
-                <p className='block1__ingress-text'>Vår vision är en värld där barn har möjligheten att påverka sina egna liv och där människor arbetar gemensamt för ett hälsosamt och hållbart samhälle. MYM:s mål är att främja barns utveckling, hälsa och självständighet och därmed förbättra barns livsvillkor utifrån deras egna drömmar och mål.</p>
+                <p className='block1__ingress-text'>
+                  {
+                    this.state.posts &&
+                    this.state.posts[0].fields &&
+                    this.state.posts[0].fields.vrVision
+                  }
+                </p>
               </div>
               <div className={showMymInfo}>
                 <p className='block1__text block1__text--small'>
