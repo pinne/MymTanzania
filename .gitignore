@@ -17,3 +17,6 @@ npm-debug.log
 # temporary vim files
 *.swo
 *.swp
+
+# editor specific configuration files
+.vscode/
