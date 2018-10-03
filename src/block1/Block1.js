@@ -48,7 +48,7 @@ class Block1 extends Component {
                   Föreningen MYM grundades år 2011 på initiativ av Anna Lundström och några av hennes nära vänner. Idén att starta upp en förening uppstod efter att Anna bott i Tanzania under en längre period, och bygger på vår vilja att visa kärlek och medmänsklighet för andra människor. Flera av styrelsemedlemmarna har också erfarenhet av utvecklingsarbete via större aktörer som UNICEF, UNHCR och Forum Syd.
                 </p>
                 <p className='block1__text block1__text--small'>
-                MYM står för Matumaini Ya Maisha vilket är swahili och betyder hopp om liv. Vi är en demokratisk, opolitisk och religiöst obunden förening som arbetar utifrån två internationella konventioner: FN:s konvention om mänskliga rättigheter och Barnkonventionen som lyfter fram varje barn och individs universella rättigheter.
+                MYM står för Matumaini Ya Maisha vilket är swahili och betyder hopp om liv. Vi är en demokratisk, opolitisk och religiöst obunden förening som arbetar utifrån två internationella konventioner: FN:s konvention om mänskliga rättigheter och Barnkonventionen som lyfter fram varje barns och individs universella rättigheter.
                 </p>
                 <p className='block1__text block1__text--small'>
                 Föreningens mål är att främja och stärka barns utveckling, hälsa och självständighet och på så vis bidra till att de kan förbättra sina livsvillkor. Detta vill vi uppnå genom att bedriva utvecklingsprojekt i nära samarbete med lokala organisationer i Tanzania. Tillsammans hoppas vi kunna bidra till en tryggare och ljusare framtid för människor i de områden där vi verkar.
@@ -59,7 +59,7 @@ class Block1 extends Component {
                 <p className='block1__text block1__text--small'>
                 MYM i Tanzania består och drivs främst av två personer, Musiba och Castory. Det är tack vare dem som vi har skapat ett så nära och positivt samarbete lokalt. Båda är tanzanier med breda nätverk och stor kunskap om lokala förhållanden i Tanzania. De är vana föreningsmänniskor där båda varit aktiva inom olika lokala och internationella organisationer under lång tid.                </p>
                 <p className='block1__text block1__text--small'>
-                Vårt lokala samarbete innebär att vi mer konkret kan följa upp hur bidragen används samt kontinuerligt få uppdateringar kring våra insatser och den förändring som våra projekt bidrar till. Med erfarenhet vet vi att det är nödvändigt att arbeta mer stor flexibilitet och att ha effektiva beslutsled. Våra arbetsmetoder är byggda för att vi snabbt ska kunna anpassa våra aktiviteter vartefter projekten fortlöper så att vi kan göra mest värdefull skillnad.                </p>
+                Vårt lokala samarbete innebär att vi mer konkret kan följa upp hur bidragen används samt kontinuerligt få uppdateringar kring våra insatser och den förändring som våra projekt bidrar till. Med erfarenhet vet vi att det är nödvändigt att arbeta med stor flexibilitet och att ha effektiva beslutsled. Våra arbetsmetoder är byggda för att vi snabbt ska kunna anpassa våra aktiviteter vartefter projekten fortlöper så att vi kan göra mest värdefull skillnad.                </p>
               </div>
               <a className={cssClasses} onClick={(e) => {this.toggleMymInfo()}}>{ this.state.toggled ? 'VISA MINDRE' : 'VISA MER INFO' }</a>
           </div>

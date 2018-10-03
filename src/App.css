@@ -284,6 +284,7 @@ a:active {
     background-color: #4c4744;
     color: #f3eae6;
     padding: 4rem;
+    text-align: center;
 }
 
 .contact-social__titel {
@@ -380,7 +381,6 @@ a:active {
     border-left: 3rem solid transparent;
 }
 
-
 /* ----------- Non-Retina Screens ----------- */
 
 @media only screen and (max-width: 480px) {
@@ -391,6 +391,7 @@ a:active {
     p {
         font-size: 1.5rem;
     }
+
 }
 
 @media screen and (min-width: 768px) {

@@ -25,7 +25,7 @@
 }
 
 .block2__text {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #fff;
 }
 
@@ -36,17 +36,18 @@
 .block2__content-titel {
     font-family: 'Francois One', sans-serif;
     font-size: 2.6rem;
+    line-height: 1.2;
 }
 
 .block2__content-text,
 .block2__content-list {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #51463f;
 }
 
 .block2__titel--small {
     font-family: 'Francois One', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-bottom: 0;
     margin-top: 0;
 }

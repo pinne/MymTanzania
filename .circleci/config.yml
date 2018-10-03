@@ -1,0 +1,32 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/MymTanzania
+    docker:
+      - image: circleci/node:8.6.0
+    steps:
+      - checkout
+      - run:
+          name: Install aws cli
+          command: |
+            sudo apt-get -y -qq update
+            sudo apt install python-pip python-dev
+            sudo pip install awscli
+      - run:
+          name: Install dependencies
+          command: npm install
+      - run:
+          name: npm build
+          command: npm run build
+      - run:
+          name: Deploy site
+          command: aws s3 sync build s3://www.mymtanzania.se/ --region eu-central-1 --delete
+          filters:
+            branches:
+              only: master
+      - run:
+          name: Deploy development site
+          command: aws s3 sync build s3://$DEVELOP_BUCKET/ --region eu-central-1 --delete
+          filters:
+            branches:
+              only: develop
