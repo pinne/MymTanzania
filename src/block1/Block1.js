@@ -41,7 +41,7 @@ class Block1 extends Component {
             </div>
             <div>
               <div className='block1__ingress'>
-                <p className='block1__ingress-text'>Vår vision är en värld där barn har möjligheten att påverka sina egna liv och där människor arbetar gemensamt för ett hälsosamt och hållbart samhälle. MYM:s mål är att främja barns utveckling, hälsa och självständighet och därmed förbättra barns livsvillkor utifrån deras egna drömmar och mål.</p>
+                <p className='block1__ingress-text'>{this.props.post}</p>
               </div>
               <div className={showMymInfo}>
                 <p className='block1__text block1__text--small'>
