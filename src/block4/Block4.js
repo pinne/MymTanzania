@@ -3,6 +3,10 @@ import Instafeed from 'react-instafeed';
 import './Block4.css';
 
 class Block4 extends Component {
+    shouldComponentUpdate() {
+        return false;
+    }
+
     render() {
         const instafeedTarget = 'instafeed';        
         return (
