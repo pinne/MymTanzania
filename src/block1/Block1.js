@@ -61,7 +61,12 @@ class Block1 extends Component {
                 <p className='block1__text block1__text--small'>
                 Vårt lokala samarbete innebär att vi mer konkret kan följa upp hur bidragen används samt kontinuerligt få uppdateringar kring våra insatser och den förändring som våra projekt bidrar till. Med erfarenhet vet vi att det är nödvändigt att arbeta med stor flexibilitet och att ha effektiva beslutsled. Våra arbetsmetoder är byggda för att vi snabbt ska kunna anpassa våra aktiviteter vartefter projekten fortlöper så att vi kan göra mest värdefull skillnad.                </p>
               </div>
-              <a className={cssClasses} onClick={(e) => {this.toggleMymInfo()}}>{ this.state.toggled ? 'VISA MINDRE' : 'VISA MER INFO' }</a>
+              <button
+                className={cssClasses}
+                onClick={(e) => {this.toggleMymInfo()}}
+              >
+                { this.state.toggled ? 'VISA MINDRE' : 'VISA MER INFO' }
+              </button>
           </div>
         </div>
       </div>

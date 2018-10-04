@@ -72,8 +72,7 @@ class App extends Component {
         {
           this.state.gotPosts &&
           <div>
-            {/* ryan gosling <3 */}
-            <Block1 post={this.getPost('Ud0LVOaTqCGWG6IKsUiaO')} />
+            {this.getPost('Ud0LVOaTqCGWG6IKsUiaO')}
           </div>
         }
         <Footer />

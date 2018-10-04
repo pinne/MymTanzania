@@ -76,6 +76,9 @@
     top: 1rem;
     right: 1rem;
     color: #51463f;
+    background: transparent;
+    border: none;
+    padding: 0;
 }
 
 .block2__btn {

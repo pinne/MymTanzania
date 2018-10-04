@@ -24,6 +24,10 @@
     position: relative;
     font-size: 1.6rem;
     padding: 0.5rem 2rem;
+    border: none;
+    color: rgb(61, 159, 144);
+    background: transparent;
+    font-family: "Francois One", sans-serif;
 }
 
 .block1__ingress-text {

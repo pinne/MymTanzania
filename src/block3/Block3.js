@@ -95,7 +95,11 @@ class Block3 extends Component {
                   Projektledare är arkitekten Elin Schnipper, som ihop med IUG, MYM och sponsorer kommer att leda och koordinera tävlingen. Sponsorer är WSP, Fojab, Tyréns, Sydark Konstruera, Tengbom och Structor, vilka även kommer agera som experthandledare för de tävlande studenterna under tävlingens gång. Efter finalen med slutpresentationer i februari 2018, kommer det vinnande laget att detaljplanera sina ritningar och börja planera sin resa till Hamuyebe för överlämning av projektritningarna.
                 </p>
               </div>
-              <a className={cssClasses} onClick={(e) => { this.toggleProjectInfo() }}>{this.state.toggled ? 'VISA MINDRE' : 'MER OM PROJEKTET'}</a>
+              <button
+                className={cssClasses}
+                onClick={(e) => { this.toggleProjectInfo() }}>
+                  {this.state.toggled ? 'VISA MINDRE' : 'MER OM PROJEKTET'}
+              </button>
             </div>
           </div>
         </div>
