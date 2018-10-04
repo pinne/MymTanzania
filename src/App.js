@@ -13,17 +13,23 @@ class App extends Component {
   constructor() {
     super()
     this.getPost = this.getPost.bind(this);
+    console.log('REACT_APP_ACCESSTOKEN: ' + process.env.REACT_APP_ACCESSTOKEN);
   }
 
   state = {
     posts: [],
-    gotPosts: false
+    gotPosts: false,
+    contentfulSettings: {
+      space: 'r72rp0hpbzql',
+      accessToken: process.env.REACT_APP_ACCESSTOKEN ||
+        '2e229c9b53417b56ce6300abc9592d73f683f914ce20',
+      host: process.env.REACT_APP_ACCESSTOKEN
+        ? 'preview.contentful.com'
+        : 'cdn.contentful.com'
+    }
   }
 
-  client = contentful.createClient({
-    space: 'r72rp0hpbzql',
-    accessToken: '268aeba4109f013e9a6e2e229c9b53417b56ce6300abc9592d73f683f914ce20'
-  })
+  client = contentful.createClient(this.state.contentfulSettings)
 
   componentDidMount() {
     this.fetchPosts().then(this.setPosts);
@@ -54,11 +60,22 @@ class App extends Component {
         <Header />
         {
           this.state.gotPosts &&
-          <Block1 post={this.getPost('1lZy65LD8MAeeeEsYIyaky')} />
+          <div>
+            <Block1 post={this.getPost('1lZy65LD8MAeeeEsYIyaky')} />
+          </div>
         }
+
         <Block2 />
         <Block3 />
         <Block4 />
+
+        {
+          this.state.gotPosts &&
+          <div>
+            {/* ryan gosling <3 */}
+            <Block1 post={this.getPost('Ud0LVOaTqCGWG6IKsUiaO')} />
+          </div>
+        }
         <Footer />
       </div>
     );
