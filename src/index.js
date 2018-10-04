@@ -12,7 +12,10 @@ const client = createClient({
   accessToken: 'faa977ce007881a00f698b518482190e13c037b0b1011766101aad9c6bb5f107'
 });
 
-ReactGA.initialize('UA-819513-7');
+if (process.env.REACT_APP_ANALYTICS) {
+  ReactGA.initialize('UA-819513-7');
+  ReactGA.pageview(window.location.pathname + window.location.search);
+}
 
 const fetchEntry = async entry => {
   try {

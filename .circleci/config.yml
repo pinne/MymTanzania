@@ -28,7 +28,18 @@ jobs:
           paths:
             - .
 
-  build:
+  build_master:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/repo/
+      - run: REACT_APP_ANALYTICS=true npm run build
+      - persist_to_workspace:
+          root: .
+          paths:
+            - build
+
+  build_develop:
     <<: *defaults
     steps:
       - attach_workspace:
@@ -62,7 +73,7 @@ workflows:
   build_and_deploy_master:
     jobs:
       - install_deps
-      - build:
+      - build_master:
           requires:
             - install_deps
           filters:
@@ -72,13 +83,13 @@ workflows:
                 - develop
       - deploy_master:
           requires:
-            - build
+            - build_master
           filters:
             branches:
               only: master
       - deploy_develop:
           requires:
-            - build
+            - build_develop
           filters:
             branches:
               only: develop
