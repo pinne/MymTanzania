@@ -1,32 +1,84 @@
+defaults: &defaults
+  working_directory: ~/repo
+  docker:
+    - image: circleci/node:7.10
+
 version: 2
+
 jobs:
-  build:
-    working_directory: ~/MymTanzania
-    docker:
-      - image: circleci/node:8.6.0
+  install_deps:
+    <<: *defaults
     steps:
       - checkout
-      - run:
-          name: Install aws cli
-          command: |
-            sudo apt-get -y -qq update
-            sudo apt install python-pip python-dev
-            sudo pip install awscli
-      - run:
-          name: Install dependencies
-          command: npm install
-      - run:
-          name: npm build
-          command: npm run build
-      - run:
-          name: Deploy site
-          command: aws s3 sync build s3://www.mymtanzania.se/ --region eu-central-1 --delete
+      - restore_cache:
+          name: Restore Package Cache
+          keys:
+            - npm-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
+            - npm-v1-{{ .Branch }}
+            - npm-v1-master
+            - npm-v1-
+      - run: npm install
+      - save_cache:
+          name: Save Package Cache
+          key: npm-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules/
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+
+  build:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/repo/
+      - run: npm run build
+      - persist_to_workspace:
+          root: .
+          paths:
+            - build
+
+  deploy_master:
+    docker:
+      - image: wilson208/circleci-awscli
+    working_directory: ~/repo
+    steps:
+      - attach_workspace:
+          at: ~/repo
+      - run: aws s3 sync build s3://www.mymtanzania.se/ --region eu-central-1 --delete
+
+  deploy_develop:
+    docker:
+      - image: wilson208/circleci-awscli
+    working_directory: ~/repo
+    steps:
+      - attach_workspace:
+          at: ~/repo
+      - run: aws s3 sync build s3://$DEVELOP_BUCKET/ --region eu-central-1 --delete
+
+workflows:
+  version: 2
+  build_and_deploy_master:
+    jobs:
+      - install_deps
+      - build:
+          requires:
+            - install_deps
+          filters:
+            branches:
+              only:
+                - master
+                - develop
+      - deploy_master:
+          requires:
+            - build
           filters:
             branches:
               only: master
-      - run:
-          name: Deploy development site
-          command: aws s3 sync build s3://$DEVELOP_BUCKET/ --region eu-central-1 --delete
+      - deploy_develop:
+          requires:
+            - build
           filters:
             branches:
               only: develop
