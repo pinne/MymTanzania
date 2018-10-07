@@ -4,7 +4,6 @@ import ReactMarkdown from 'react-markdown';
 export default ({ content }) => {
   return (
     <div>
-      <pre>{JSON.stringify(content, null, 4)}</pre>
       <h3>{content.fields.rubrik}</h3>
       <img
         height="200"
