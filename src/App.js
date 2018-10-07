@@ -45,27 +45,13 @@ class App extends Component {
     })
   }
 
-  getPost = id => {
-    return this.state.posts.map(post => {
-      let postField;
-      if (post.sys.id === id) {
-        postField = post.fields.post;
-      }
-      return postField;
-    })
-  }
+  getPost = id => this.state.posts.filter(post => post.sys.id === id)[0]
 
   render() {
     return (
       <div className="App">
         <Header />
-        {
-          this.state.gotPosts &&
-          <div>
-            <Block1 post={this.getPost('1lZy65LD8MAeeeEsYIyaky')} />
-          </div>
-        }
-
+        <Block1 />
         <Block2 />
         <Block3 />
         <Block4 />
@@ -74,7 +60,7 @@ class App extends Component {
           this.state.gotPosts &&
           <div>
             {/* ryan gosling <3 */}
-            <Post post={this.getPost('Ud0LVOaTqCGWG6IKsUiaO')} />
+            <Post content={this.getPost('Ud0LVOaTqCGWG6IKsUiaO')} />
           </div>
         }
         <Footer />
