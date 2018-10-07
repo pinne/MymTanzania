@@ -54,11 +54,12 @@ class App extends Component {
   }
 
   render() {
+    const { gotPosts } = this.state
     return (
       <div className="App">
         <Header />
         {
-          this.state.gotPosts &&
+          gotPosts &&
           <div>
             <Block1 post={this.getPost('1lZy65LD8MAeeeEsYIyaky')} />
           </div>
@@ -69,7 +70,7 @@ class App extends Component {
         <Block4 />
 
         {
-          this.state.gotPosts &&
+          gotPosts &&
           <div>
             {/* ryan gosling <3 */}
             <Block1 post={this.getPost('Ud0LVOaTqCGWG6IKsUiaO')} />
