@@ -28,8 +28,21 @@ jobs:
           paths:
             - .
 
-  build:
+  build_master:
     <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/repo/
+      - run: npm run build
+      - persist_to_workspace:
+          root: .
+          paths:
+            - build
+
+  build_develop:
+    <<: *defaults
+    environment:
+      REACT_APP_ACCESSTOKEN: b46be02c85d8363802ebce05a86d17945e9c22e4c1725818b7c036ad082019e0
     steps:
       - attach_workspace:
           at: ~/repo/
@@ -62,30 +75,23 @@ workflows:
   build_and_deploy:
     jobs:
       - install_deps
-      - set_preview_token:
-          environment:
-            REACT_APP_ACCESSTOKEN: b46be02c85d8363802ebce05a86d17945e9c22e4c1725818b7c036ad082019e0
-          filters:
-            branches:
-              only:
-                - develop
-      - build:
+      - build_master:
           requires:
             - install_deps
           filters:
             branches:
               only:
                 - master
+      - build_develop:
+          requires:
+            - install_deps
+          filters:
+            branches:
+              only:
                 - develop
       - deploy_master:
           requires:
-            - build
-          filters:
-            branches:
-              only: master
+            - build_master
       - deploy_develop:
           requires:
-            - build
-          filters:
-            branches:
-              only: develop
+            - build_develop

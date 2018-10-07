@@ -13,6 +13,7 @@ class App extends Component {
   constructor() {
     super()
     this.getPost = this.getPost.bind(this);
+    console.log(this.state.contentfulSettings.accessToken)
   }
 
   state = {
