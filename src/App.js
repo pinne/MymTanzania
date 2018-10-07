@@ -8,6 +8,7 @@ import Block2 from './block2/Block2.js';
 import Block3 from './block3/Block3.js';
 import Block4 from './block4/Block4.js';
 import Footer from './footer/Footer.js';
+import Post from './Post.js';
 
 class App extends Component {
   constructor() {
@@ -55,12 +56,11 @@ class App extends Component {
   }
 
   render() {
-    const { gotPosts } = this.state
     return (
       <div className="App">
         <Header />
         {
-          gotPosts &&
+          this.state.gotPosts &&
           <div>
             <Block1 post={this.getPost('1lZy65LD8MAeeeEsYIyaky')} />
           </div>
@@ -71,10 +71,10 @@ class App extends Component {
         <Block4 />
 
         {
-          gotPosts &&
+          this.state.gotPosts &&
           <div>
             {/* ryan gosling <3 */}
-            <Block1 post={this.getPost('Ud0LVOaTqCGWG6IKsUiaO')} />
+            <Post post={this.getPost('Ud0LVOaTqCGWG6IKsUiaO')} />
           </div>
         }
         <Footer />
