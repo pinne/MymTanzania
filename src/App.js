@@ -13,7 +13,6 @@ class App extends Component {
   constructor() {
     super()
     this.getPost = this.getPost.bind(this);
-    console.log('REACT_APP_ACCESSTOKEN: ' + process.env.REACT_APP_ACCESSTOKEN);
   }
 
   state = {
