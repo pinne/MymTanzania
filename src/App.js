@@ -21,7 +21,7 @@ class App extends Component {
     contentfulSettings: {
       space: 'r72rp0hpbzql',
       accessToken: process.env.REACT_APP_ACCESSTOKEN ||
-        '2e229c9b53417b56ce6300abc9592d73f683f914ce20',
+        '268aeba4109f013e9a6e2e229c9b53417b56ce6300abc9592d73f683f914ce20',
       host: process.env.REACT_APP_ACCESSTOKEN
         ? 'preview.contentful.com'
         : 'cdn.contentful.com'

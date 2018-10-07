@@ -62,6 +62,13 @@ workflows:
   build_and_deploy:
     jobs:
       - install_deps
+      - set_preview_token:
+          environment:
+            REACT_APP_ACCESSTOKEN: b46be02c85d8363802ebce05a86d17945e9c22e4c1725818b7c036ad082019e0
+          filters:
+            branches:
+              only:
+                - develop
       - build:
           requires:
             - install_deps
