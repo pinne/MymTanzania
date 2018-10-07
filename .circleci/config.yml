@@ -59,7 +59,7 @@ jobs:
 
 workflows:
   version: 2
-  build_and_deploy_master:
+  build_and_deploy:
     jobs:
       - install_deps
       - build:
