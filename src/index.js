@@ -7,7 +7,6 @@ import './index.css';
 const deployRegex = /^https?:\/\/www\.mymtanzania\.se/
 const isDeployed = document.location.href.match(deployRegex)
 if (isDeployed) {
-  console.log('Initializing Google Analytics')
   ReactGA.initialize('UA-819513-7');
   ReactGA.pageview(window.location.pathname + window.location.search);
 }
