@@ -8,7 +8,7 @@ import Block2 from './block2/Block2.js';
 import Block3 from './block3/Block3.js';
 import Block4 from './block4/Block4.js';
 import Footer from './footer/Footer.js';
-import GetPost from './post/GetPost';
+import ProjectList from './project/ProjectList.js';
 
 class App extends Component {
   constructor() {
@@ -60,11 +60,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <GetPost
-          content={this.getPost('Ud0LVOaTqCGWG6IKsUiaO')}
-          image={this.getImage('Ud0LVOaTqCGWG6IKsUiaO')}
-          isLoading={this.state.isLoading}
-        />
+        <ProjectList />
         <Block1 />
         <Block2 />
         <Block3 />
@@ -73,7 +69,6 @@ class App extends Component {
         {
           !this.state.isLoading &&
           <div>
-            {/* ryan gosling <3 */}
             {/*<Post content={this.getPost('Ud0LVOaTqCGWG6IKsUiaO')} />*/}
           </div>
         }
