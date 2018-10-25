@@ -4,7 +4,6 @@ import ReactGA from 'react-ga';
 import App from './App';
 import './index.css';
 
-ReactGA.initialize('UA-819513-7');
 const deployRegex = /^https?:\/\/www\.mymtanzania\.se/
 const isDeployed = document.location.href.match(deployRegex)
 if (isDeployed) {

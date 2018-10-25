@@ -8,18 +8,20 @@ import Block2 from './block2/Block2.js';
 import Block3 from './block3/Block3.js';
 import Block4 from './block4/Block4.js';
 import Footer from './footer/Footer.js';
-import Post from './Post.js';
+import GetPost from './post/GetPost';
 
 class App extends Component {
   constructor() {
     super()
     this.getPost = this.getPost.bind(this);
+    this.setPosts = this.setPosts.bind(this);
     console.log(this.state.contentfulSettings.accessToken)
   }
 
   state = {
     posts: [],
-    gotPosts: false,
+    assets: [],
+    isLoading: true,
     contentfulSettings: {
       space: 'r72rp0hpbzql',
       accessToken: process.env.REACT_APP_ACCESSTOKEN ||
@@ -33,34 +35,43 @@ class App extends Component {
   client = contentful.createClient(this.state.contentfulSettings)
 
   componentDidMount() {
-    this.fetchPosts().then(this.setPosts);
+    this.fetchPosts()
+      .then(this.setPosts)
+      // .catch(error => console.log('ERROR: ' + error))
   }
 
   fetchPosts = () => this.client.getEntries()
 
-  setPosts = response => {
+  setPosts (response) {
     this.setState({
       posts: response.items,
-      gotPosts: true
+      assets: response.includes.Asset,
+      isLoading: false
     })
   }
 
   getPost = id => this.state.posts.filter(post => post.sys.id === id)[0]
+  getImage = id => this.state.assets.filter(asset => asset.sys.id === id)[0]
 
   render() {
     return (
       <div className="App">
         <Header />
+        <GetPost
+          content={this.getPost('1lZy65LD8MAeeeEsYIyaky')}
+          image={this.getImage('1lZy65LD8MAeeeEsYIyaky')}
+          isLoading={this.state.isLoading}
+        />
         <Block1 />
         <Block2 />
         <Block3 />
         <Block4 />
 
         {
-          this.state.gotPosts &&
+          !this.state.isLoading &&
           <div>
             {/* ryan gosling <3 */}
-            <Post content={this.getPost('Ud0LVOaTqCGWG6IKsUiaO')} />
+            {/*<Post content={this.getPost('Ud0LVOaTqCGWG6IKsUiaO')} />*/}
           </div>
         }
         <Footer />
