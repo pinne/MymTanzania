@@ -74,7 +74,12 @@ workflows:
   version: 2
   build_and_deploy:
     jobs:
-      - install_deps
+      - install_deps:
+          filters:
+            branches:
+              only:
+                - master
+                - develop
       - build_master:
           requires:
             - install_deps
