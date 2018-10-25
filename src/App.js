@@ -43,6 +43,9 @@ class App extends Component {
   fetchPosts = () => this.client.getEntries()
 
   setPosts (response) {
+    if (!response.includes || !response.includes.Asset) {
+      return
+    }
     this.setState({
       posts: response.items,
       assets: response.includes.Asset,
