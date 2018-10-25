@@ -45,7 +45,7 @@ class App extends Component {
     })
   }
 
-  getPost = id => this.state.posts.filter(post => post.sys.id === id)[0]
+  getPost = id => this.state.posts.filter(post => post.sys.id === id)[0] || []
 
   render() {
     return (
@@ -59,7 +59,6 @@ class App extends Component {
         {
           this.state.gotPosts &&
           <div>
-            {/* ryan gosling <3 */}
             <Post content={this.getPost('Ud0LVOaTqCGWG6IKsUiaO')} />
           </div>
         }

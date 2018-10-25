@@ -2,6 +2,10 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
 export default ({ content }) => {
+  if (!content.fields || !content.fields.rubrik) {
+    console.error('Could not load post')
+    return null
+  }
   return (
     <div>
       <h3>{content.fields.rubrik}</h3>
