@@ -1,3 +1,7 @@
+.menu__item {
+    color: #fff;
+}
+
 .image-block__container {
     position: relative;
 }

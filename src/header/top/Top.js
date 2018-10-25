@@ -6,9 +6,11 @@ import './Top.css';
 class Top extends Component {
   render() {
     return (
-      <div className='top'>
-        <img src={logo} className='top__logo top__logo--rest' alt="logo" />
-        <img src={logomobil} className='top__logo top__logo--mobile' alt="logo" />
+      <div className='flex-row'>
+        <div className='flex-row'>
+          <img src={logo} className='top__logo top__logo--rest' alt="logo" />
+          <img src={logomobil} className='top__logo top__logo--mobile' alt="logo" />
+        </div>
       </div>
     )
   }

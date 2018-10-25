@@ -1,32 +1,102 @@
+defaults: &defaults
+  working_directory: ~/repo
+  docker:
+    - image: circleci/node:7.10
+
 version: 2
+
 jobs:
-  build:
-    working_directory: ~/MymTanzania
-    docker:
-      - image: circleci/node:8.6.0
+  install_deps:
+    <<: *defaults
     steps:
       - checkout
-      - run:
-          name: Install aws cli
-          command: |
-            sudo apt-get -y -qq update
-            sudo apt install python-pip python-dev
-            sudo pip install awscli
-      - run:
-          name: Install dependencies
-          command: npm install
-      - run:
-          name: npm build
-          command: npm run build
-      - run:
-          name: Deploy site
-          command: aws s3 sync build s3://www.mymtanzania.se/ --region eu-central-1 --delete
+      - restore_cache:
+          name: Restore Package Cache
+          keys:
+            - npm-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
+            - npm-v1-{{ .Branch }}
+            - npm-v1-master
+            - npm-v1-
+      - run: npm install
+      - save_cache:
+          name: Save Package Cache
+          key: npm-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules/
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+
+  build_master:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/repo/
+      - run: npm run build
+      - persist_to_workspace:
+          root: .
+          paths:
+            - build
+
+  build_develop:
+    <<: *defaults
+    environment:
+      REACT_APP_ACCESSTOKEN: b46be02c85d8363802ebce05a86d17945e9c22e4c1725818b7c036ad082019e0
+    steps:
+      - attach_workspace:
+          at: ~/repo/
+      - run: npm run build
+      - persist_to_workspace:
+          root: .
+          paths:
+            - build
+
+  deploy_master:
+    docker:
+      - image: wilson208/circleci-awscli
+    working_directory: ~/repo
+    steps:
+      - attach_workspace:
+          at: ~/repo
+      - run: aws s3 sync build s3://www.mymtanzania.se/ --region eu-central-1 --delete
+
+  deploy_develop:
+    docker:
+      - image: wilson208/circleci-awscli
+    working_directory: ~/repo
+    steps:
+      - attach_workspace:
+          at: ~/repo
+      - run: aws s3 sync build s3://$DEVELOP_BUCKET/ --region eu-central-1 --delete
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - install_deps:
           filters:
             branches:
-              only: master
-      - run:
-          name: Deploy development site
-          command: aws s3 sync build s3://$DEVELOP_BUCKET/ --region eu-central-1 --delete
+              only:
+                - master
+                - develop
+      - build_master:
+          requires:
+            - install_deps
           filters:
             branches:
-              only: develop
+              only:
+                - master
+      - build_develop:
+          requires:
+            - install_deps
+          filters:
+            branches:
+              only:
+                - develop
+      - deploy_master:
+          requires:
+            - build_master
+      - deploy_develop:
+          requires:
+            - build_develop
