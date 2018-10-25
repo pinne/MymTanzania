@@ -13,3 +13,12 @@ Usage
 
     npm install
     npm start
+
+Preview content
+---------------
+To preview DRAFT content from Contentful, start the development server with the
+prefix REACT_APP_ACCESSTOKEN
+
+    REACT_APP_ACCESSTOKEN=<preview token> npm start
+
+
