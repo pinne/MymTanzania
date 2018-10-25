@@ -58,8 +58,8 @@ class App extends Component {
       <div className="App">
         <Header />
         <GetPost
-          content={this.getPost('1lZy65LD8MAeeeEsYIyaky')}
-          image={this.getImage('1lZy65LD8MAeeeEsYIyaky')}
+          content={this.getPost('Ud0LVOaTqCGWG6IKsUiaO')}
+          image={this.getImage('Ud0LVOaTqCGWG6IKsUiaO')}
           isLoading={this.state.isLoading}
         />
         <Block1 />

@@ -12,7 +12,6 @@ export default ({
   return (
     <div>
       <h3>{rubrik}</h3>
-      speechBalloon: {speechBalloon}
       { imgUrl ?
         <img
           height="200"
