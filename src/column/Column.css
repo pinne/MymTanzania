@@ -1,0 +1,35 @@
+.column {
+    background-color: #fcf1ef;
+}
+
+.column__container {
+    max-width: 104rem;
+    margin: 0 auto 6rem;
+}
+
+.column__header {
+    color: #51463f;
+    text-align: center;
+}
+
+.column__color-box {
+    margin-left: 1rem;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.column__color-box:first-child {
+    margin-left: 0;
+}
+
+
+
+.column__color-box {
+    margin: 0 1rem;
+    padding: 3rem;
+}
+
+.column__color-box-titel {
+    font-size: 2rem;
+    color: #4c4744;
+}

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Instafeed from 'react-instafeed';
-import './Block4.css';
+import './instagram.css';
 
-class Block4 extends Component {
+class Instagram extends Component {
     render() {
         const instafeedTarget = 'instafeed';        
         return (
@@ -24,4 +24,4 @@ class Block4 extends Component {
     }
 }
 
-export default Block4;
+export default Instagram;

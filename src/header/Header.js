@@ -3,9 +3,15 @@ import './Header.css';
 
 
 class Header extends Component {
+
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <heading>
+       {this.props.type}
         <div className='image-block__container'>
         <div className='image-block'>
           <div className='image-block__content'>

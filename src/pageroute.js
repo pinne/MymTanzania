@@ -1,14 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Start from './start/Start';
-import About from './about/About';
+import Project from './project/Project';
 import Top from './header/top/Top'
 
 const PageRoute = () => (
   <Router>
     <div>
       <div className='top'>
-        <nav className='flex-row flex-space-between'>
+        <div className='top__container flex-row flex-space-between'>
           <Top />
           <ul className='menu flex-row flex-align-center'>
             <li className='right-space'>
@@ -18,10 +18,10 @@ const PageRoute = () => (
               <Link className='menu__item' to="/projekt">Projekt</Link>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
       <Route exact path="/" component={Start} />
-      <Route path="/projekt" component={About} />
+      <Route path="/projekt" component={Project} />
     </div>
   </Router>
 );
