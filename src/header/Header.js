@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 import './Header.css';
-import Top from './top/Top.js';
+
 
 class Header extends Component {
+
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <heading>
         <div className='image-block__container'>
         <div className='image-block'>
-          <Top />
           <div className='image-block__content'>
             <h1 className='image-block__titel left-space right-space'>GÖR SKILLNAD</h1>
             <p className='image-block__text'>Vi är en ideell förening som vill förbättra livet och villkoren för barn i Tanzania</p>

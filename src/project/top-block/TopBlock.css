@@ -1,0 +1,10 @@
+.top-block {
+    position: relative;
+}
+
+.top-block__image {
+    background-image: url('../../images/project-default-image.png');
+    background-size: cover;
+    min-height: 40rem;
+    background-position: center;
+}

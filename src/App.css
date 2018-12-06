@@ -154,6 +154,10 @@ a:active {
     justify-content: center;
 }
 
+.flex-space-between {
+    justify-content: space-between;
+}
+
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;

@@ -2,14 +2,8 @@ import React, { Component } from 'react';
 import * as contentful from 'contentful';
 
 import './App.css';
-import Header from './header/Header.js';
-import Block1 from './block1/Block1.js';
-import Block2 from './block2/Block2.js';
-import Block3 from './block3/Block3.js';
-import Block4 from './block4/Block4.js';
 import Footer from './footer/Footer.js';
-import ProjectList from './project/ProjectList.js';
-import Post from './post/Post.js';
+import PageRoute from './pageroute.js';
 
 class App extends Component {
   constructor() {
@@ -64,19 +58,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
-        {/* <ProjectList /> */}
-        <Block1 />
-        <Block2 />
-        <Block3 />
-        <Block4 />
-
-        {
-          !this.state.isLoading &&
-          <div>
-            {<Post content={this.getPost('Ud0LVOaTqCGWG6IKsUiaO')} />}
-          </div>
-        }
+        <PageRoute />
         <Footer />
       </div>
     );

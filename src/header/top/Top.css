@@ -1,9 +1,19 @@
 .top {
     position: relative;
-    width: 100%;
-    text-align: center;
-    padding: 1rem 0;
+    max-width: 168rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+   
 }
+
+.top__container {
+    position: absolute;
+    z-index: 1;
+    padding: 2rem;
+    box-sizing: border-box;
+    width: 100%
+}
+
 .top__logo--mobile {
    width: 4rem;
 }
@@ -13,11 +23,10 @@
 }
 
 @media screen and (min-width: 768px) {
-    .top {
-        box-sizing: border-box;
-        text-align: left;
-        padding: 2rem;
+    .top__container {
+        padding: 0 10rem;
     }
+
     .top__logo--rest {
         display: block;
         width: 16rem;
