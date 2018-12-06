@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Header from '../header/Header.js';
+import TopBlock from './top-block/TopBlock.js';
 import './Project.css';
 import Column from '../column/Column.js';
 
@@ -10,7 +10,7 @@ class Project extends Component {
     var pageName = 'project';
     return (
       <div>
-        <Header type={pageName} />
+        <TopBlock type={pageName} />
         <section className='block block3'>
           <div className='block3__content'>
               <h2>Projekt: Ukerewe</h2>

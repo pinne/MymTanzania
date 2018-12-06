@@ -11,7 +11,6 @@ class Header extends Component {
   render() {
     return (
       <heading>
-       {this.props.type}
         <div className='image-block__container'>
         <div className='image-block'>
           <div className='image-block__content'>
